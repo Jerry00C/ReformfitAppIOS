@@ -11,7 +11,8 @@ import SwiftUI
 struct ReformFITApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Main()
+            
         }
     }
 }
