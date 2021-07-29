@@ -11,12 +11,16 @@ import AVKit
 struct LocationMain: View {
     
     
+    @State var present = false
+    @Binding var fab: Bool
+    let player : AVPlayer = AVPlayer(url: URL(string: "https://dcffvbxhml043.cloudfront.net/7d87d189-98b4-47ee-a4b4-1c3fa4df15ad/mp4/60ad9036c346e300011b78e0_Mp4_Avc_Aac_16x9_1280x720p_30Hz_4.5Mbps.mp4")!)
+    
     
     var body: some View {
         
         
-        ScrollView{
-            
+           ScrollView{
+                    
             VStack(alignment: .center, spacing: 0, content: {
                 
                 HStack{
@@ -26,9 +30,13 @@ struct LocationMain: View {
                 }
                     .padding(.vertical, 8)
                     
-                VideoPlayer(player: AVPlayer(url: URL(string: "https://dcffvbxhml043.cloudfront.net/7d87d189-98b4-47ee-a4b4-1c3fa4df15ad/mp4/60ad9036c346e300011b78e0_Mp4_Avc_Aac_16x9_1280x720p_30Hz_4.5Mbps.mp4")!))
+                VideoPlayer(player: player)
                     .frame(height: 250)
-                    .ignoresSafeArea()
+                    .onDisappear{
+                        player.pause()
+                        player.seek(to: .zero)
+                    }
+                    .opacity(present || fab ? 0 : 1)
                     
                 
                 VStack(alignment: .center, spacing: 8, content: {
@@ -70,8 +78,10 @@ struct LocationMain: View {
                 .background(Color("black3"))
                 
                 Divider().frame(height: 12)
-                LocationExView()
                 
+                NavigationLink(destination: LocationInfo(), isActive: $present){
+                            LocationExView()
+                    }
                 
             })
             .background(Color("black"))
@@ -79,11 +89,10 @@ struct LocationMain: View {
             Spacer()
             
             
-            
+                
             
         }
         .background(Color("black"))
-        
         
     }
 }
@@ -149,40 +158,42 @@ struct LocationExView: View{
     
     var body: some View{
         
-        VStack{
-            Image("wifi")
-                .resizable()
-                .frame(height: 150)
-            
-            
-            HStack{
-                
-                Text("万锦Ferrier试验店")
-                    .font(.subheadline)
-                    .foregroundColor(Color("yellow"))
-                Spacer()
-                
-                Image("地图")
+            VStack{
+                Image("wifi")
                     .resizable()
-                    .frame(width: 32, height: 32)
+                    .frame(height: 150)
+                
+                
+                HStack{
+                    
+                    Text("万锦Ferrier试验店")
+                        .font(.subheadline)
+                        .foregroundColor(Color("yellow"))
+                    Spacer()
+                    
+                    Image("地图")
+                        .resizable()
+                        .frame(width: 32, height: 32)
+                    
+                    
+                }
+                
+                HStack{
+                    Text("85 Ferrier Street Unit 3, Markhma ON L3R2Y9")
+                        .foregroundColor(Color("white"))
+                        .font(.body)
+                
+                    Spacer()
+                }
+                
                 
                 
             }
-            
-            HStack{
-                Text("85 Ferrier Street Unit 3, Markhma ON L3R2Y9")
-            
-                Spacer()
-            }
+            .frame(width: UIScreen.main.bounds.width*0.88)
+            .padding(.horizontal, 10)
+            .background(Color("black4").cornerRadius(15))
             
             
-            
-        }
-        .frame(width: UIScreen.main.bounds.width*0.88)
-        .padding(.horizontal, 10)
-        .background(Color("black4").cornerRadius(15))
-        
-        
         
         
     }
@@ -191,8 +202,9 @@ struct LocationExView: View{
 
 
 struct LocationMain_Previews: PreviewProvider {
+    @State static var fab: Bool = false
     static var previews: some View {
-        LocationMain()
+        LocationMain(fab: $fab)
     }
 }
 

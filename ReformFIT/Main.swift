@@ -17,47 +17,80 @@ enum Tab{
 struct Main: View {
     @State var selectedTab: Tab = .first
     @State var fab: Bool = false
+    
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
+
+    var btnBack: some View { Button(action: {
+            self.presentationMode.wrappedValue.dismiss()
+            }) {
+                HStack {
+                Image("ic_back") // set image here
+                    .aspectRatio(contentMode: .fit)
+                    .foregroundColor(.white)
+                    Text("Go back")
+                }
+            }
+        }
+    
+    
+        
     var body: some View {
         
         
-        ZStack {
-            Color("black").zIndex(0)
-            VStack{
-                switch selectedTab{
-                    case .first:
-                        LocationMain()
-                        
-                    case .second:
-                        ClassMain()
-                            
-                    case .third:
-                        SocialMain()
-                            
-                    case .fourth:
-                        VideoMain()
-                        
-                }
-                
-                CustomTabView(selectedTab: $selectedTab, fab:$fab)
-                            .frame(height: 50)
-            }.zIndex(1)
-                
-            if fab{
+        NavigationView{
+            
+         ZStack {
+             Color("black").zIndex(0)
+             VStack{
+                 switch selectedTab{
+                     case .first:
+                         LocationMain(fab: $fab)
+                         
+                     case .second:
+                         ClassMain()
+                             
+                     case .third:
+                         SocialMain()
+                             
+                     case .fourth:
+                         VideoMain()
+                         
+                 }
+                 
+                 CustomTabView(selectedTab: $selectedTab, fab:$fab)
+                             .frame(height: 50)
+                     .opacity(fab ? 0 : 1)
+                 
+                 
+             }.zIndex(1)
+                 
+             if fab{
                 
                 MineMain()
-                    .frame(height: UIScreen.main.bounds.height*0.80)
                     .transition(.move(edge: .bottom))
                     .zIndex(2)
-                
-            }
-            VStack{
-                ClassMain().opacity(0)
-                
-                fabView(fab: $fab)
-                
-            }.zIndex(3)
+                 
+                 
+             }
+             VStack{
+                 ClassMain().opacity(0)
+                 
+                 fabView(fab: $fab)
+                 
+             }.zIndex(3)
+         }
+         .background(Color("black"))
+         .navigationBarTitleDisplayMode(.inline)
+                 .toolbar { // <2>
+                     ToolbarItem(placement: .principal) { // <3>
+                         VStack {
+                             Text("Title").font(.headline)
+                             Text("Subtitle").font(.subheadline)
+                         }
+                     }
+                 }
         }
-        
     }
 }
 
@@ -140,6 +173,7 @@ struct fabView: View{
         Button{
             withAnimation{
                 fab.toggle()
+                
             }
             
         }label:{
@@ -164,3 +198,5 @@ struct fabView: View{
     
 
 }
+
+

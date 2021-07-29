@@ -16,6 +16,8 @@
 		092D99FC26AF7429006DC5FE /* ClassMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092D99FB26AF7429006DC5FE /* ClassMain.swift */; };
 		092D99FE26AFAED8006DC5FE /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092D99FD26AFAED8006DC5FE /* Main.swift */; };
 		092D9A0126B052B1006DC5FE /* MineMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092D9A0026B052B1006DC5FE /* MineMain.swift */; };
+		092D9A0326B1CE63006DC5FE /* LocationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092D9A0226B1CE63006DC5FE /* LocationInfo.swift */; };
+		0943623E26B1D4D100A51FC5 /* NavigationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0943623D26B1D4D000A51FC5 /* NavigationTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		092D99FB26AF7429006DC5FE /* ClassMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassMain.swift; sourceTree = "<group>"; };
 		092D99FD26AFAED8006DC5FE /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		092D9A0026B052B1006DC5FE /* MineMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineMain.swift; sourceTree = "<group>"; };
+		092D9A0226B1CE63006DC5FE /* LocationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfo.swift; sourceTree = "<group>"; };
+		0943623D26B1D4D000A51FC5 /* NavigationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				092D99EC26A668D4006DC5FE /* Info.plist */,
 				092D99E926A668D4006DC5FE /* Preview Content */,
 				092D99FD26AFAED8006DC5FE /* Main.swift */,
+				092D9A0226B1CE63006DC5FE /* LocationInfo.swift */,
+				0943623D26B1D4D000A51FC5 /* NavigationTest.swift */,
 			);
 			path = ReformFIT;
 			sourceTree = "<group>";
@@ -171,10 +177,12 @@
 			files = (
 				092D99FA26AF741B006DC5FE /* VideoMain.swift in Sources */,
 				092D99E626A668CA006DC5FE /* LocationMain.swift in Sources */,
+				092D9A0326B1CE63006DC5FE /* LocationInfo.swift in Sources */,
 				092D99E426A668CA006DC5FE /* ReformFITApp.swift in Sources */,
 				092D9A0126B052B1006DC5FE /* MineMain.swift in Sources */,
 				092D99F726AF73F0006DC5FE /* SocialMain.swift in Sources */,
 				092D99FE26AFAED8006DC5FE /* Main.swift in Sources */,
+				0943623E26B1D4D100A51FC5 /* NavigationTest.swift in Sources */,
 				092D99FC26AF7429006DC5FE /* ClassMain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

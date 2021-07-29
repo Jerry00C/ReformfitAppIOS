@@ -10,9 +10,10 @@ import SwiftUI
 @main
 struct ReformFITApp: App {
     var body: some Scene {
-        WindowGroup {
+        
+        WindowGroup(Text("www")){
             Main()
-            
         }
+        
     }
 }

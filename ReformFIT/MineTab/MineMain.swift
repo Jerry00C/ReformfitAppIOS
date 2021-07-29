@@ -12,19 +12,21 @@ struct MineMain: View {
     
     
     var body: some View {
-        
-        ZStack{
+        VStack(alignment: .center, spacing: 0, content: {
             
-            Color("white")
+            Divider().frame(height: UIScreen.main.bounds.height*0.08).opacity(0.96)
             
-            VStack{
-                
+            ZStack{
+                Color(.black)
                 Text("Mine Main")
-                    .foregroundColor(Color("black"))
+                    .foregroundColor(Color("white"))
+                
+            }
+            .padding(0)
+        })
+            
             
         
-            }
-        }
         
     }
 }
