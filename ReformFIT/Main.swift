@@ -92,6 +92,7 @@ struct Main: View {
                  }
         }
     }
+    
 }
 
 struct CustomTabView: View{
