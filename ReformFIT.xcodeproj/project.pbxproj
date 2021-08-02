@@ -26,6 +26,14 @@
 		336E161A26B8A65E000E2281 /* PurchaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E161226B8A65E000E2281 /* PurchaseData.swift */; };
 		336E161B26B8A65E000E2281 /* PurchaseOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E161326B8A65E000E2281 /* PurchaseOption.swift */; };
 		336E161C26B8A65E000E2281 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E161426B8A65E000E2281 /* GlobalVariables.swift */; };
+		336E162626B8AA09000E2281 /* AccessTokenResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E161E26B8AA09000E2281 /* AccessTokenResource.swift */; };
+		336E162726B8AA09000E2281 /* ServiceResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E161F26B8AA09000E2281 /* ServiceResource.swift */; };
+		336E162826B8AA09000E2281 /* MindbodyAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E162026B8AA09000E2281 /* MindbodyAPIRequest.swift */; };
+		336E162926B8AA09000E2281 /* ContractPurchaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E162126B8AA09000E2281 /* ContractPurchaseViewModel.swift */; };
+		336E162A26B8AA09000E2281 /* ServicePurchaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E162226B8AA09000E2281 /* ServicePurchaseViewModel.swift */; };
+		336E162B26B8AA09000E2281 /* ContractResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E162326B8AA09000E2281 /* ContractResource.swift */; };
+		336E162C26B8AA09000E2281 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E162426B8AA09000E2281 /* NetworkRequest.swift */; };
+		336E162D26B8AA09000E2281 /* MindbodyAPIResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E162526B8AA09000E2281 /* MindbodyAPIResource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,14 +50,6 @@
 		092D9A0026B052B1006DC5FE /* MineMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineMain.swift; sourceTree = "<group>"; };
 		092D9A0226B1CE63006DC5FE /* LocationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfo.swift; sourceTree = "<group>"; };
 		0943623D26B1D4D000A51FC5 /* NavigationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTest.swift; sourceTree = "<group>"; };
-		336E15D126B8A4A5000E2281 /* AccessTokenResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenResource.swift; sourceTree = "<group>"; };
-		336E15D226B8A4A5000E2281 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
-		336E15D326B8A4A5000E2281 /* ContractPurchaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractPurchaseViewModel.swift; sourceTree = "<group>"; };
-		336E15D426B8A4A5000E2281 /* ServiceResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceResource.swift; sourceTree = "<group>"; };
-		336E15D526B8A4A5000E2281 /* MindbodyAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindbodyAPIRequest.swift; sourceTree = "<group>"; };
-		336E15D626B8A4A5000E2281 /* MindbodyAPIResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindbodyAPIResource.swift; sourceTree = "<group>"; };
-		336E15D726B8A4A5000E2281 /* ContractResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractResource.swift; sourceTree = "<group>"; };
-		336E15D826B8A4A5000E2281 /* ServicePurchaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePurchaseViewModel.swift; sourceTree = "<group>"; };
 		336E160926B8A65E000E2281 /* PassPurchasingPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassPurchasingPage.swift; sourceTree = "<group>"; };
 		336E160A26B8A65E000E2281 /* ContractPurchasingPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContractPurchasingPage.swift; sourceTree = "<group>"; };
 		336E160C26B8A65E000E2281 /* PrivateLessonPurchasePreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivateLessonPurchasePreview.swift; sourceTree = "<group>"; };
@@ -58,6 +58,14 @@
 		336E161226B8A65E000E2281 /* PurchaseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseData.swift; sourceTree = "<group>"; };
 		336E161326B8A65E000E2281 /* PurchaseOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseOption.swift; sourceTree = "<group>"; };
 		336E161426B8A65E000E2281 /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		336E161E26B8AA09000E2281 /* AccessTokenResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenResource.swift; sourceTree = "<group>"; };
+		336E161F26B8AA09000E2281 /* ServiceResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceResource.swift; sourceTree = "<group>"; };
+		336E162026B8AA09000E2281 /* MindbodyAPIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MindbodyAPIRequest.swift; sourceTree = "<group>"; };
+		336E162126B8AA09000E2281 /* ContractPurchaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContractPurchaseViewModel.swift; sourceTree = "<group>"; };
+		336E162226B8AA09000E2281 /* ServicePurchaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicePurchaseViewModel.swift; sourceTree = "<group>"; };
+		336E162326B8AA09000E2281 /* ContractResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContractResource.swift; sourceTree = "<group>"; };
+		336E162426B8AA09000E2281 /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		336E162526B8AA09000E2281 /* MindbodyAPIResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MindbodyAPIResource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +98,8 @@
 		092D99E226A668CA006DC5FE /* ReformFIT */ = {
 			isa = PBXGroup;
 			children = (
+				336E161D26B8AA09000E2281 /* MindodyNetworkRequest */,
 				336E160726B8A65E000E2281 /* PurchasesViews */,
-				336E15D026B8A496000E2281 /* MindbodyNetworkRequest */,
 				092D99FF26B0529D006DC5FE /* MineTab */,
 				092D99F826AF73FA006DC5FE /* MainTab */,
 				092D99E326A668CA006DC5FE /* ReformFITApp.swift */,
@@ -130,21 +138,6 @@
 				092D9A0026B052B1006DC5FE /* MineMain.swift */,
 			);
 			path = MineTab;
-			sourceTree = "<group>";
-		};
-		336E15D026B8A496000E2281 /* MindbodyNetworkRequest */ = {
-			isa = PBXGroup;
-			children = (
-				336E15D126B8A4A5000E2281 /* AccessTokenResource.swift */,
-				336E15D326B8A4A5000E2281 /* ContractPurchaseViewModel.swift */,
-				336E15D726B8A4A5000E2281 /* ContractResource.swift */,
-				336E15D526B8A4A5000E2281 /* MindbodyAPIRequest.swift */,
-				336E15D626B8A4A5000E2281 /* MindbodyAPIResource.swift */,
-				336E15D226B8A4A5000E2281 /* NetworkRequest.swift */,
-				336E15D826B8A4A5000E2281 /* ServicePurchaseViewModel.swift */,
-				336E15D426B8A4A5000E2281 /* ServiceResource.swift */,
-			);
-			path = MindbodyNetworkRequest;
 			sourceTree = "<group>";
 		};
 		336E160726B8A65E000E2281 /* PurchasesViews */ = {
@@ -200,6 +193,21 @@
 				336E161426B8A65E000E2281 /* GlobalVariables.swift */,
 			);
 			path = "data and logic";
+			sourceTree = "<group>";
+		};
+		336E161D26B8AA09000E2281 /* MindodyNetworkRequest */ = {
+			isa = PBXGroup;
+			children = (
+				336E161E26B8AA09000E2281 /* AccessTokenResource.swift */,
+				336E161F26B8AA09000E2281 /* ServiceResource.swift */,
+				336E162026B8AA09000E2281 /* MindbodyAPIRequest.swift */,
+				336E162126B8AA09000E2281 /* ContractPurchaseViewModel.swift */,
+				336E162226B8AA09000E2281 /* ServicePurchaseViewModel.swift */,
+				336E162326B8AA09000E2281 /* ContractResource.swift */,
+				336E162426B8AA09000E2281 /* NetworkRequest.swift */,
+				336E162526B8AA09000E2281 /* MindbodyAPIResource.swift */,
+			);
+			path = MindodyNetworkRequest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,17 +282,25 @@
 				092D99FA26AF741B006DC5FE /* VideoMain.swift in Sources */,
 				092D99E626A668CA006DC5FE /* LocationMain.swift in Sources */,
 				336E161926B8A65E000E2281 /* DividerView.swift in Sources */,
+				336E162626B8AA09000E2281 /* AccessTokenResource.swift in Sources */,
 				336E161B26B8A65E000E2281 /* PurchaseOption.swift in Sources */,
 				092D9A0326B1CE63006DC5FE /* LocationInfo.swift in Sources */,
 				092D99E426A668CA006DC5FE /* ReformFITApp.swift in Sources */,
 				336E161A26B8A65E000E2281 /* PurchaseData.swift in Sources */,
 				092D9A0126B052B1006DC5FE /* MineMain.swift in Sources */,
+				336E162726B8AA09000E2281 /* ServiceResource.swift in Sources */,
+				336E162D26B8AA09000E2281 /* MindbodyAPIResource.swift in Sources */,
+				336E162C26B8AA09000E2281 /* NetworkRequest.swift in Sources */,
 				336E161726B8A65E000E2281 /* PrivateLessonPurchasePreview.swift in Sources */,
+				336E162B26B8AA09000E2281 /* ContractResource.swift in Sources */,
 				092D99F726AF73F0006DC5FE /* SocialMain.swift in Sources */,
+				336E162926B8AA09000E2281 /* ContractPurchaseViewModel.swift in Sources */,
+				336E162A26B8AA09000E2281 /* ServicePurchaseViewModel.swift in Sources */,
 				092D99FE26AFAED8006DC5FE /* Main.swift in Sources */,
 				0943623E26B1D4D100A51FC5 /* NavigationTest.swift in Sources */,
 				092D99FC26AF7429006DC5FE /* ClassMain.swift in Sources */,
 				336E161826B8A65E000E2281 /* GroupClassPurchasePreview.swift in Sources */,
+				336E162826B8AA09000E2281 /* MindbodyAPIRequest.swift in Sources */,
 				336E161626B8A65E000E2281 /* ContractPurchasingPage.swift in Sources */,
 				336E161526B8A65E000E2281 /* PassPurchasingPage.swift in Sources */,
 				336E161C26B8A65E000E2281 /* GlobalVariables.swift in Sources */,

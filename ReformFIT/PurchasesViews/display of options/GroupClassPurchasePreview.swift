@@ -26,7 +26,7 @@ struct GroupClassPurchasePreview: View {
          
         NavigationView {
             ZStack(){
-                Color("main_background")
+                Color("black2")
                     .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 
                 
@@ -112,9 +112,9 @@ struct PurchaseInfo: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 16, height: 16)
-                .foregroundColor(Color("gray"))
+                .foregroundColor(Color("grey"))
             Text(info)
-                .foregroundColor(Color("gray"))
+                .foregroundColor(Color("grey"))
             
         }
     }
@@ -174,7 +174,7 @@ struct MembershipPurchaseOptions: View {
     
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/).foregroundColor(Color("card_background"))
+            RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/).foregroundColor(Color("black3"))
             VStack(alignment: .leading){
                 
                 PurchaseTypeTitleView(title: "Premier Burn", imageString: "list.bullet")
@@ -248,7 +248,7 @@ struct PassPurchaseOptions: View {
     
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/).foregroundColor(Color("card_background"))
+            RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/).foregroundColor(Color("black3"))
             VStack(alignment: .leading){
                 PurchaseTypeTitleView(title: "Pass Member", imageString: "list.bullet")
                 
