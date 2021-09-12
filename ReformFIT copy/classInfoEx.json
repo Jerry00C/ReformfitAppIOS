@@ -1,0 +1,131 @@
+{
+            "ClassScheduleId": 6,
+            "Visits": null,
+            "Clients": [],
+            "Location": {
+                "AdditionalImageURLs": [],
+                "Address": "123 Alphabet Street",
+                "Address2": "Paisely Park, MN 55404",
+                "Amenities": [
+                    {
+                        "Id": 1,
+                        "Name": "Showers"
+                    },
+                    {
+                        "Id": 2,
+                        "Name": "Rentals"
+                    }
+                ],
+                "BusinessDescription": "Yoga 4 U",
+                "City": "Paisely Park",
+                "Description": "Yoga 2 the dawn.",
+                "HasClasses": true,
+                "Id": 7,
+                "Latitude": 35.2795603,
+                "Longitude": -120.6626051,
+                "Name": "Yoga 4 U",
+                "Phone": "800 555-1212",
+                "PhoneExtension": "123",
+                "PostalCode": "55404",
+                "SiteId": 999,
+                "StateProvCode": "MN",
+                "Tax1": 0.7,
+                "Tax2": 0,
+                "Tax3": 0,
+                "Tax4": 0,
+                "Tax5": 0,
+                "TotalNumberOfRatings": 1,
+                "AverageRating": 5,
+                "TotalNumberOfDeals": 4
+            },
+            "Resource": null,
+            "MaxCapacity": 2,
+            "WebCapacity": 2,
+            "TotalBooked": 0,
+            "TotalBookedWaitlist": 0,
+            "WebBooked": 0,
+            "SemesterId": null,
+            "IsCanceled": false,
+            "Substitute": false,
+            "Active": true,
+            "IsWaitlistAvailable": false,
+            "IsEnrolled": null,
+            "HideCancel": false,
+            "Id": 1464,
+            "IsAvailable": true,
+            "StartDateTime": "2019-01-11T18:00:00",
+            "EndDateTime": "2019-01-11T19:00:00",
+            "LastModifiedDateTime": "0001-01-01T00:00:00",
+            "ClassDescription": {
+                "Active": true,
+                "Description": "<div style=\"text-align:center;\">\r\n<ul>\r\n<li><span style=\"color:#ff0000;\"><em><strong>This is the Description for your Yoga Class.</strong></em></span></li>\r\n</ul>\r\n</div>",
+                "Id": 1,
+                "ImageURL": "https://clients.mindbodyonline.com/studios/ACMEYoga/reservations/1.jpg?osv=637136734414821811",
+                "LastUpdated": "2016-04-18T10:48:08.933",
+                "Level": {
+                    "ID": 1,
+                    "Name": "Level 1",
+                    "Description": null
+                },
+                "Name": "Yoga 4 U Beginners Class",
+                "Notes": "<div>This is a place for class notes.</div>",
+                "Prereq": "<div><strong>This is a a place for Pre Requisite Notes</strong></div>",
+                "Program": {
+                    "Id": 22,
+                    "Name": "Yoga Class 22",
+                    "ScheduleType": "Class",
+                    "CancelOffset": 0,
+                    "ContentFormats": [
+                        "InPerson"
+                    ]
+                },
+                "SessionType": {
+                    "Type": "All",
+                    "DefaultTimeLength": null,
+                    "Id": 5,
+                    "Name": "Yoga Class",
+                    "NumDeducted": 1,
+                    "ProgramId": 22,
+                    "CrossRegionalBookingPerformed": false,
+                    "SiteId": null
+                },
+                "Category": "Personal training",
+                "CategoryId": 138,
+                "Subcategory": "General",
+                "SubcategoryId": 145
+            },
+            "Staff": {
+                "Address": "456 Alfred Road",
+                "AppointmentInstructor": false,
+                "AlwaysAllowDoubleBooking": false,
+                "Bio": "<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac lacinia lacus. Donec mollis eros ut consectetur molestie. Praesent rutrum quis sem pharetra hendrerit. In hac habitasse platea dictumst. Morbi vitae venenatis nisi. Aenean vulputate ut ligula eu vulputate. Integer auctor dignissim leo, a commodo massa vehicula sed. Fusce aliquet iaculis nisl ut efficitur.</div>",
+                "City": "Minneapolis",
+                "Country": "US",
+                "Email": "cbaconskin@yoga4u.com",
+                "FirstName": "Cloreen",
+                "HomePhone": "8005551212",
+                "Id": 3,
+                "IndependentContractor": false,
+                "IsMale": false,
+                "LastName": "Baconskin",
+                "MobilePhone": "8005552323",
+                "Name": "Chilling",
+                "PostalCode": "55404",
+                "ClassTeacher": false,
+                "SortOrder": 0,
+                "State": "MN",
+                "WorkPhone": "8005553434",
+                "ImageUrl": null,
+                "Appointments": [],
+                "Unavailabilities": [],
+                "Availabilities": []
+            },
+            "BookingWindow": {
+                "StartDateTime": "2019-01-11T00:00:00",
+                "EndDateTime": "2019-01-11T18:00:00",
+                "DailyStartTime": null,
+                "DailyEndTime": null
+            },
+            "BookingStatus": "Free",
+            "VirtualStreamLink": "https://video.mindbody.io/studios/12345/live-streams/dd5f1esss4a5d2e1f55"
+        }
