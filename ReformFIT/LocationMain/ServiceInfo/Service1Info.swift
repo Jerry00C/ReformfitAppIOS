@@ -46,8 +46,7 @@ struct Service1Info: View {
         
         ZStack{
             VStack{
-                TopBarWOTitle(rootActive: $rootActive)
-                
+                TopBar(rootActive: $rootActive, titleText: "万锦试验点")
                 
                 ScrollViewReader{proxy in
                     
@@ -156,8 +155,6 @@ struct Service1Info: View {
                                     }
                                     .frame(height: 1)
                                     
-                                    ServiceTitleView()
-                                        .id("thresh1")
                                     
                                 
                                    
@@ -173,10 +170,7 @@ struct Service1Info: View {
                                     .frame(height: 1)
                                     
                                     
-                                    StepView()
-                                        .id("thresh2")
-                                    
-                                        
+                                   
                                     
                                         
                                 }
