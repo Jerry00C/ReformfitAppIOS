@@ -9,7 +9,7 @@ import Foundation
 
 
 
-struct RemoveFromWaitlistResource: APIResource{
+struct RemoveFromWaitlistResource: MindbodyAPIResource{
 
     
     typealias ResponseModelType = RemoveFromWaitlistSResponse
@@ -33,7 +33,7 @@ struct RemoveFromWaitlistResource: APIResource{
 }
 
 
-struct RemoveFromWaitlistSResponse: MindbodyResponseType{
+struct RemoveFromWaitlistSResponse: GeneralResponseType{
     typealias onSuccessResponse = RemoveFromWaitlistResponse
     
     typealias onErrorResponse = ErrorResponse

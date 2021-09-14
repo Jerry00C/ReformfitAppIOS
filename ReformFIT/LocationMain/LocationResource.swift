@@ -10,7 +10,7 @@ import Foundation
 
 
 
-struct LocationResource: APIResource{
+struct LocationResource: MindbodyAPIResource{
 
     
     typealias ResponseModelType = LocationInfoSResponse
@@ -25,7 +25,7 @@ struct LocationResource: APIResource{
 }
 
 
-struct LocationInfoSResponse: MindbodyResponseType{
+struct LocationInfoSResponse: GeneralResponseType{
     typealias onSuccessResponse = LocationInfoResponse
     
     typealias onErrorResponse = ErrorResponse

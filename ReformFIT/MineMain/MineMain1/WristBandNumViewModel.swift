@@ -17,8 +17,8 @@ class WristBandNumViewModel: ObservableObject{
     var wristBandNum: String = ""
     
             
-    private var tokenAPIRequest: APIRequest<TokenResource>?
-    private var wristBandNumRequest: APIRequest<WristBandNumResource>?
+    private var tokenAPIRequest: MindbodyAPIRequest<TokenResource>?
+    private var wristBandNumRequest: MindbodyAPIRequest<WristBandNumResource>?
     
     
     func initalize(wristBandNum: String){
@@ -35,7 +35,7 @@ class WristBandNumViewModel: ObservableObject{
         
         
         let requestBody = UserTokenRequest(Username: LoginCredential.username, Password: LoginCredential.password)
-        tokenAPIRequest = APIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
+        tokenAPIRequest = MindbodyAPIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
         tokenAPIRequest!.execute{[weak self]  response in
             if let realResponse = response?.OnSuccess{
                 print(realResponse.AccessToken)
@@ -62,14 +62,14 @@ class WristBandNumViewModel: ObservableObject{
         let client = ClientWristBandNum(Id: globalVariable.clientId ?? "", CustomClientFields: customField)
         let requestBody = WristBandNumRequest(Client: client)
         
-        wristBandNumRequest = APIRequest<WristBandNumResource>(resource: wristBandNumResource, requestBody: requestBody, method: "POST")
+        wristBandNumRequest = MindbodyAPIRequest<WristBandNumResource>(resource: wristBandNumResource, requestBody: requestBody, method: "POST")
         wristBandNumRequest?.addAuthKey(authToken: authToken)
         wristBandNumRequest?.execute(){[weak self] response in
             
             
             if let realResponse = response?.OnSuccess{
                 self?.loading = false
-                print("response: \(String(describing: response))")
+                print("response: \(String(describing: realResponse))")
                 onCompletion()
             }
             else if let realResponse = response?.OnError{

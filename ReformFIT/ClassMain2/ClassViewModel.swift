@@ -22,14 +22,14 @@ class ClassViewModel: ObservableObject{
         self.endDateAndTime = endDateTime
     }
             
-    private var tokenAPIRequest: APIRequest<TokenResource>?
-    private var classRequest: APIRequest<ClassResource>?
+    private var tokenAPIRequest: MindbodyAPIRequest<TokenResource>?
+    private var classRequest: MindbodyAPIRequest<ClassResource>?
     
     func getToken(onCompletion: @escaping()->Void){
         loading = true
         let tokenResource = TokenResource(queries: nil)
         let requestBody = UserTokenRequest(Username: LoginCredential.username, Password: LoginCredential.password)
-        tokenAPIRequest = APIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
+        tokenAPIRequest = MindbodyAPIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
         tokenAPIRequest!.execute{[weak self]  response in
             
             if let realResponse = response?.OnSuccess{
@@ -60,7 +60,7 @@ class ClassViewModel: ObservableObject{
     func getClassInfo(authToken: String, onCompletion:@escaping()->Void){
         
         let classResource = ClassResource(endDateTime: endDateAndTime, startDateTime: startDateAndTime)
-        classRequest = APIRequest<ClassResource>(resource: classResource, requestBody: nil, method: "GET")
+        classRequest = MindbodyAPIRequest<ClassResource>(resource: classResource, requestBody: nil, method: "GET")
         classRequest?.addAuthKey(authToken: authToken)
         classRequest?.execute(){[weak self] response in
            

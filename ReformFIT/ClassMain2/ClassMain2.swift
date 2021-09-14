@@ -100,7 +100,7 @@ extension ClassMain2{
         print("testtt: \(classesModel.count)")
         
         print("testtt: \(onlineClassModel.count)")
-        print("testttt \(classViewModel.obtainedClassList?.count)")
+        print("testttt \(String(describing: classViewModel.obtainedClassList?.count))")
         
         let calendar = Calendar.current
         
@@ -115,7 +115,7 @@ extension ClassMain2{
         
         
         let startDate = formatter.string(from: midnight)
-        let startDateDate = formatter.date(from: startDate)
+        _ = formatter.date(from: startDate)
         
         //print("startDate \(startDate)")
         //print("startDateDate \(String(describing: startDateDate))")

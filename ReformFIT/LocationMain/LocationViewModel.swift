@@ -12,14 +12,14 @@ class LocationViewModel: ObservableObject{
     @Published var obtainedLocation:Location?
     @Published var loading = false
             
-    private var tokenAPIRequest: APIRequest<TokenResource>?
-    private var locationRequest: APIRequest<LocationResource>?
+    private var tokenAPIRequest: MindbodyAPIRequest<TokenResource>?
+    private var locationRequest: MindbodyAPIRequest<LocationResource>?
     
     func getToken(onCompletion: @escaping()->Void){
         loading = true
         let tokenResource = TokenResource(queries: nil)
         let requestBody = UserTokenRequest(Username: LoginCredential.username, Password: LoginCredential.password)
-        tokenAPIRequest = APIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
+        tokenAPIRequest = MindbodyAPIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
         tokenAPIRequest!.execute{[weak self]  response in
             
             if let realResponse = response?.OnSuccess{
@@ -40,7 +40,7 @@ class LocationViewModel: ObservableObject{
     func getLocationInfo(authToken: String, onCompletion:@escaping()->Void){
         
         let locationResource = LocationResource()
-        locationRequest = APIRequest<LocationResource>(resource: locationResource, requestBody: nil, method: "GET")
+        locationRequest = MindbodyAPIRequest<LocationResource>(resource: locationResource, requestBody: nil, method: "GET")
         locationRequest?.addAuthKey(authToken: authToken)
         locationRequest?.execute(){[weak self] response in
             

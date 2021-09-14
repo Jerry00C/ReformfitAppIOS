@@ -17,9 +17,9 @@ class RefreshingHistoryViewModel{
     
     var limited: Bool
             
-    private var tokenAPIRequest: APIRequest<TokenResource>?
-    private var visitHistoryRequest: APIRequest<VisitHistoryResource>?
-    private var classHistoryRequest: APIRequest<ClassHistoryResource>?
+    private var tokenAPIRequest: MindbodyAPIRequest<TokenResource>?
+    private var visitHistoryRequest: MindbodyAPIRequest<VisitHistoryResource>?
+    private var classHistoryRequest: MindbodyAPIRequest<ClassHistoryResource>?
     
     var startDate: String
     var endDate: String
@@ -55,7 +55,7 @@ class RefreshingHistoryViewModel{
         }
         let tokenResource = TokenResource(queries: nil)
         let requestBody = UserTokenRequest(Username: LoginCredential.username, Password: LoginCredential.password)
-        tokenAPIRequest = APIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
+        tokenAPIRequest = MindbodyAPIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
         tokenAPIRequest!.execute{[weak self]  response in
             if let realResponse = response?.OnSuccess{
                 print(realResponse.AccessToken)
@@ -79,7 +79,7 @@ class RefreshingHistoryViewModel{
         print("get visit history Info")
         
         let visitHistoryResource = VisitHistoryResource(startDate: self.startDate, endDate: self.endDate)
-        visitHistoryRequest = APIRequest<VisitHistoryResource>(resource: visitHistoryResource, requestBody: nil, method: "GET")
+        visitHistoryRequest = MindbodyAPIRequest<VisitHistoryResource>(resource: visitHistoryResource, requestBody: nil, method: "GET")
         
         visitHistoryRequest?.addAuthKey(authToken: self.accessToken)
         visitHistoryRequest?.execute(){[weak self] response in
@@ -118,13 +118,13 @@ class RefreshingHistoryViewModel{
         else{
             
             let classHistoryResource = ClassHistoryResource(classIds: self.classIds, endDateTime: self.endDate, startDateTime: self.startDate)
-            classHistoryRequest = APIRequest<ClassHistoryResource>(resource: classHistoryResource, requestBody: nil, method: "GET")
+            classHistoryRequest = MindbodyAPIRequest<ClassHistoryResource>(resource: classHistoryResource, requestBody: nil, method: "GET")
             
             classHistoryRequest?.addAuthKey(authToken: self.accessToken)
             classHistoryRequest?.execute(){[weak self] response in
                 
-                print("history on sucess   \(response?.OnSuccess)")
-                    print("history on sucess   \(response?.OnError)")
+                print("history on sucess   \(String(describing: response?.OnSuccess))")
+                print("history on sucess   \(String(describing: response?.OnError))")
                 if let realResponse = response?.OnSuccess{
                     
                     for classEx in realResponse.classes {

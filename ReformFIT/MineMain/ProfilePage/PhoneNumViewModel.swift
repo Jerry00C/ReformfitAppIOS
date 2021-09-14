@@ -16,8 +16,8 @@ class PhoneNumViewModel: ObservableObject{
     var phoneNum: String = ""
     
             
-    private var tokenAPIRequest: APIRequest<TokenResource>?
-    private var phoneNumRequest: APIRequest<PhoneNumResource>?
+    private var tokenAPIRequest: MindbodyAPIRequest<TokenResource>?
+    private var phoneNumRequest: MindbodyAPIRequest<PhoneNumResource>?
     
     
     func initalize(phoneNum: String){
@@ -32,7 +32,7 @@ class PhoneNumViewModel: ObservableObject{
         loading = true
         let tokenResource = TokenResource(queries: nil)
         let requestBody = UserTokenRequest(Username: LoginCredential.username, Password: LoginCredential.password)
-        tokenAPIRequest = APIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
+        tokenAPIRequest = MindbodyAPIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
         tokenAPIRequest!.execute{[weak self]  response in
             if let realResponse = response?.OnSuccess{
                 print(realResponse.AccessToken)
@@ -57,7 +57,7 @@ class PhoneNumViewModel: ObservableObject{
         let client = ClientPhoneNum(Id: globalVariable.clientId ?? "", MobilePhone: self.phoneNum)
         let requestBody = PhoneNumRequest(Client: client)
         
-        phoneNumRequest = APIRequest<PhoneNumResource>(resource: phoneNumResource, requestBody: requestBody, method: "POST")
+        phoneNumRequest = MindbodyAPIRequest<PhoneNumResource>(resource: phoneNumResource, requestBody: requestBody, method: "POST")
         phoneNumRequest?.addAuthKey(authToken: authToken)
         phoneNumRequest?.execute(){[weak self]
             response in
@@ -65,7 +65,7 @@ class PhoneNumViewModel: ObservableObject{
             
             if let realResponse = response?.OnSuccess{
                 self?.loading = false
-                print("response: \(String(describing: response))")
+                print("response: \(String(describing: realResponse))")
                 onCompletion()
             }
             else if let realResponse = response?.OnError{

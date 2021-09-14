@@ -76,11 +76,11 @@ class ContractPurchaseManager: ObservableObject{
             if let realResponse = response?.OnSuccess{
                 let accessToken = realResponse.AccessToken
                 let postPurchaseContractResource = ContractPurchaseResource(queries: nil)
-                let postPurchaseContractRequest = APIRequest<ContractPurchaseResource>(resource: postPurchaseContractResource, requestBody: self?.contractPurchaseRequest, method: "POST")
+                let postPurchaseContractRequest = MindbodyAPIRequest<ContractPurchaseResource>(resource: postPurchaseContractResource, requestBody: self?.contractPurchaseRequest, method: "POST")
                 postPurchaseContractRequest.addAuthKey(authToken: accessToken)
                 
                 postPurchaseContractRequest.execute{
-                    [weak self] response in
+                    /*[weak self]*/ response in
                     if let successResponse = response?.OnSuccess{
                         print(successResponse)
                         onCompletion()
@@ -122,7 +122,7 @@ class ContractPurchaseManager: ObservableObject{
 
     func postShoppingCart(authToken: String , onCompletion:@escaping()->Void, onFailure:@escaping(_ totalGet:Bool)->Void){
         let shoppingCartResource = ShoppingCartResource(queries: nil)
-        let postShoppingCartRequest = APIRequest<ShoppingCartResource>(resource: shoppingCartResource, requestBody: self.promoCodeTestShoppingCart, method: "POST")
+        let postShoppingCartRequest = MindbodyAPIRequest<ShoppingCartResource>(resource: shoppingCartResource, requestBody: self.promoCodeTestShoppingCart, method: "POST")
         postShoppingCartRequest.addAuthKey(authToken: authToken)
         
         postShoppingCartRequest.execute(){
@@ -164,7 +164,7 @@ class ContractPurchaseManager: ObservableObject{
                 
                 let clientCreditCardResource = GetClientCreditCardResource(clientId: self?.clientId ?? "")
                 
-                let clientCreditCardRequest = APIRequest<GetClientCreditCardResource>(
+                let clientCreditCardRequest = MindbodyAPIRequest<GetClientCreditCardResource>(
                     resource: clientCreditCardResource,
                     requestBody: nil,
                     method: "GET")
@@ -217,7 +217,7 @@ class ContractPurchaseManager: ObservableObject{
                 
                 let updateCreditCardResource = UpdateCreditCardResource(queries: nil)
                 
-                let updateCreditCardRequest = APIRequest<UpdateCreditCardResource>(resource: updateCreditCardResource, requestBody: CCRequestBody, method: "POST")
+                let updateCreditCardRequest = MindbodyAPIRequest<UpdateCreditCardResource>(resource: updateCreditCardResource, requestBody: CCRequestBody, method: "POST")
                 
                 updateCreditCardRequest.addAuthKey(authToken: accessToken)
                 updateCreditCardRequest.execute(){[weak self] response in
@@ -253,7 +253,7 @@ class ContractPurchaseManager: ObservableObject{
                 
                 let getDirectDebitResource = GetClientDirectDebitResource(clientId: self?.clientId ?? "")
                 
-                let directDebitRequest = APIRequest<GetClientDirectDebitResource>(resource: getDirectDebitResource, requestBody: nil, method: "GET")
+                let directDebitRequest = MindbodyAPIRequest<GetClientDirectDebitResource>(resource: getDirectDebitResource, requestBody: nil, method: "GET")
                 
                 directDebitRequest.addAuthKey(authToken: accessToken)
                 directDebitRequest.execute{
@@ -289,7 +289,7 @@ class ContractPurchaseManager: ObservableObject{
                 
                 let addDirectDebitResource = AddClientDirectDebitResource(queries: nil)
                 
-                let addDirectDebitRequest = APIRequest<AddClientDirectDebitResource>(resource: addDirectDebitResource, requestBody: newDirectDebitInfo, method: "POST")
+                let addDirectDebitRequest = MindbodyAPIRequest<AddClientDirectDebitResource>(resource: addDirectDebitResource, requestBody: newDirectDebitInfo, method: "POST")
                 print(newDirectDebitInfo)
                 addDirectDebitRequest.addAuthKey(authToken: accessToken)
                 addDirectDebitRequest.execute(){[weak self] response in

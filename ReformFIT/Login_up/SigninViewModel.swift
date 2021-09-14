@@ -13,8 +13,8 @@ class SigninViewModel: ObservableObject{
     @Published var loading = false
     
             
-    private var tokenAPIRequest: APIRequest<TokenResource>?
-    private var signinRequest: APIRequest<SigninResource>?
+    private var tokenAPIRequest: MindbodyAPIRequest<TokenResource>?
+    private var signinRequest: MindbodyAPIRequest<SigninResource>?
     
     
     
@@ -23,7 +23,7 @@ class SigninViewModel: ObservableObject{
         loading = true
         let tokenResource = TokenResource(queries: nil)
         let requestBody = UserTokenRequest(Username: LoginCredential.username, Password: LoginCredential.password)
-        tokenAPIRequest = APIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
+        tokenAPIRequest = MindbodyAPIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
         tokenAPIRequest!.execute{[weak self]  response in
             if let realResponse = response?.OnSuccess{
                 print(realResponse.AccessToken)
@@ -41,7 +41,7 @@ class SigninViewModel: ObservableObject{
     func signinMindbody(authToken: String, onCompletion:@escaping()->Void, onError:@escaping(_ message: String)->Void){
         print("signning in")
         let signinResource = SigninResource()
-        signinRequest = APIRequest<SigninResource>(resource: signinResource, requestBody: nil, method: "GET")
+        signinRequest = MindbodyAPIRequest<SigninResource>(resource: signinResource, requestBody: nil, method: "GET")
         signinRequest?.addAuthKey(authToken: authToken)
         signinRequest?.execute(){[weak self]
             response in

@@ -21,8 +21,8 @@ class SignupViewModel: ObservableObject{
     var phoneNum: String = ""
     var postalCode: String = ""
             
-    private var tokenAPIRequest: APIRequest<TokenResource>?
-    private var signupRequest: APIRequest<SignupResource>?
+    private var tokenAPIRequest: MindbodyAPIRequest<TokenResource>?
+    private var signupRequest: MindbodyAPIRequest<SignupResource>?
     
     
     func initalize(email: String, height: String, weight: String, fName: String, lName: String, phoneNum: String, postalCode: String){
@@ -41,7 +41,7 @@ class SignupViewModel: ObservableObject{
         loading = true
         let tokenResource = TokenResource(queries: nil)
         let requestBody = UserTokenRequest(Username: LoginCredential.username, Password: LoginCredential.password)
-        tokenAPIRequest = APIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
+        tokenAPIRequest = MindbodyAPIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
         tokenAPIRequest!.execute{[weak self]  response in
             if let realResponse = response?.OnSuccess{
                 print(realResponse.AccessToken)
@@ -70,7 +70,7 @@ class SignupViewModel: ObservableObject{
         let customField4 = CustomClientFieldReq(Id: 4, Value: "", DataType: "String", Name: "Progressive Swim Level")
         let requestBody = SignupRequest(Email: self.email, FirstName: self.fName, LastName: lName, CustomClientFields: [customField1, customField2,customField3, customField4], MobilePhone: phoneNum, PostalCode: postalCode, BirthDate: "2000-03-03")
         
-        signupRequest = APIRequest<SignupResource>(resource: signupResource, requestBody: requestBody, method: "POST")
+        signupRequest = MindbodyAPIRequest<SignupResource>(resource: signupResource, requestBody: requestBody, method: "POST")
         signupRequest?.addAuthKey(authToken: authToken)
         signupRequest?.execute(){[weak self]
             response in

@@ -869,7 +869,7 @@ extension ClassInfo{
                     let clientId = document.data()!["ClientId"]!
                     print("clientId: \(clientId)")
                     
-                    globalVariable.clientId = clientId as! String
+                    globalVariable.clientId = clientId as? String
                     
                     signInMindbody()                }
                 else{
@@ -1003,7 +1003,7 @@ struct CHeaderView: View{
                         .foregroundColor(Color("yellow"))
                         .onTapGesture {
                             let urlO = URL(string: "http://maps.apple.com/?q=ReformFit")
-                            print(urlO)
+//                            print(urlO)
                             if(UIApplication.shared.canOpenURL(urlO!)){
                                 UIApplication.shared.open(urlO!, options: [:], completionHandler: nil)
                             }

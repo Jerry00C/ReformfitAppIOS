@@ -17,8 +17,8 @@ class RemoveFromWaitlistViewModel: ObservableObject{
     var waitlistIds: Int = 0
     
             
-    private var tokenAPIRequest: APIRequest<TokenResource>?
-    private var removeFromWaitlistRequest: APIRequest<RemoveFromWaitlistResource>?
+    private var tokenAPIRequest: MindbodyAPIRequest<TokenResource>?
+    private var removeFromWaitlistRequest: MindbodyAPIRequest<RemoveFromWaitlistResource>?
     
     
     func initalize(waitlistIds: Int){
@@ -31,7 +31,7 @@ class RemoveFromWaitlistViewModel: ObservableObject{
         loading = true
         let tokenResource = TokenResource(queries: nil)
         let requestBody = UserTokenRequest(Username: LoginCredential.username, Password: LoginCredential.password)
-        tokenAPIRequest = APIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
+        tokenAPIRequest = MindbodyAPIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
         tokenAPIRequest!.execute{[weak self]  response in
             if let realResponse = response?.OnSuccess{
                 print(realResponse.AccessToken)
@@ -53,7 +53,7 @@ class RemoveFromWaitlistViewModel: ObservableObject{
     func removeFromWaitlist(authToken: String, onCompletion:@escaping()->Void, onError:@escaping(_ message: String)->Void){
         let removeFromWaitlistResource = RemoveFromWaitlistResource(waitlistIds: self.waitlistIds)
         
-        removeFromWaitlistRequest = APIRequest<RemoveFromWaitlistResource>(resource: removeFromWaitlistResource, requestBody: nil, method: "POST")
+        removeFromWaitlistRequest = MindbodyAPIRequest<RemoveFromWaitlistResource>(resource: removeFromWaitlistResource, requestBody: nil, method: "POST")
         removeFromWaitlistRequest?.addAuthKey(authToken: authToken)
         removeFromWaitlistRequest?.execute(){[weak self]
             response in

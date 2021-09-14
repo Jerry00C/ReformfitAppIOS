@@ -8,7 +8,7 @@
 import Foundation
 
 
-class APIRequest<Resource: APIResource> {
+class MindbodyAPIRequest<Resource: MindbodyAPIResource> {
     let resource: Resource
     let requestBody_: Resource.RequestModelType?
     let method: String
@@ -26,7 +26,7 @@ class APIRequest<Resource: APIResource> {
     }
 }
  
-extension APIRequest: NetworkRequest {
+extension MindbodyAPIRequest: NetworkRequest {
     
 
 
@@ -60,7 +60,7 @@ extension APIRequest: NetworkRequest {
     }
 }
 
-extension APIRequest{
+extension MindbodyAPIRequest{
     func addAuthKey(authToken authorization:String)->Void{
         requestHeaders["Authorization"]=authorization
     }

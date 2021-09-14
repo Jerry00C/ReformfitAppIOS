@@ -10,7 +10,7 @@ import Foundation
 
 
 
-struct VisitHistoryResource: APIResource{
+struct VisitHistoryResource: MindbodyAPIResource{
 
     
     typealias ResponseModelType = VisitHistorySResponse
@@ -40,7 +40,7 @@ struct VisitHistoryResource: APIResource{
 
 
 
-struct VisitHistorySResponse: MindbodyResponseType{
+struct VisitHistorySResponse: GeneralResponseType{
     typealias onSuccessResponse = VisitHistoryResponse
     
     typealias onErrorResponse = ErrorResponse

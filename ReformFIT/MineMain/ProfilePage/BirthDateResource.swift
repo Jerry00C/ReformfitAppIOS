@@ -9,7 +9,7 @@ import Foundation
 
 
 
-struct BirthDateResource: APIResource{
+struct BirthDateResource: MindbodyAPIResource{
 
     
     typealias ResponseModelType = BirthDateSResponse
@@ -24,7 +24,7 @@ struct BirthDateResource: APIResource{
 }
 
 
-struct BirthDateSResponse: MindbodyResponseType{
+struct BirthDateSResponse: GeneralResponseType{
     typealias onSuccessResponse = UpdateResponse
     
     typealias onErrorResponse = ErrorResponse

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ClassHistoryResource: APIResource{
+struct ClassHistoryResource: MindbodyAPIResource{
     typealias ResponseModelType = ClassInfoSResponse
     typealias RequestModelType = ClassInfoRequest
     
@@ -30,7 +30,7 @@ struct ClassHistoryResource: APIResource{
         
         
         
-        print("queries:   \(queries)")
+        print("queries:   \(String(describing: queries))")
     }
     
     

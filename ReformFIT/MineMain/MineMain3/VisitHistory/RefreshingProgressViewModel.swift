@@ -18,11 +18,11 @@ class RefreshingProgressViewModel: ObservableObject{
     
     var limited: Bool
             
-    private var tokenAPIRequest: APIRequest<TokenResource>?
-    private var visitHistoryRequest: APIRequest<VisitHistoryResource>?
-    private var waitlistEntriesRequest: APIRequest<WaitlistEntriesResource>?
-    private var waitlistEntriesOrderRequest: APIRequest<WaitlistEntriesOrderResource>?
-    private var classHistoryRequest: APIRequest<ClassHistoryResource>?
+    private var tokenAPIRequest: MindbodyAPIRequest<TokenResource>?
+    private var visitHistoryRequest: MindbodyAPIRequest<VisitHistoryResource>?
+    private var waitlistEntriesRequest: MindbodyAPIRequest<WaitlistEntriesResource>?
+    private var waitlistEntriesOrderRequest: MindbodyAPIRequest<WaitlistEntriesOrderResource>?
+    private var classHistoryRequest: MindbodyAPIRequest<ClassHistoryResource>?
     
     var startDate: String
     var endDate: String
@@ -68,7 +68,7 @@ class RefreshingProgressViewModel: ObservableObject{
         }
         let tokenResource = TokenResource(queries: nil)
         let requestBody = UserTokenRequest(Username: LoginCredential.username, Password: LoginCredential.password)
-        tokenAPIRequest = APIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
+        tokenAPIRequest = MindbodyAPIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
         tokenAPIRequest!.execute{[weak self]  response in
             if let realResponse = response?.OnSuccess{
                 print(realResponse.AccessToken)
@@ -89,7 +89,7 @@ class RefreshingProgressViewModel: ObservableObject{
     func getVisitHistoryInfo(onCompletion:@escaping()->Void){
         
         let visitHistoryResource = VisitHistoryResource(startDate: self.startDate, endDate: self.endDate)
-        visitHistoryRequest = APIRequest<VisitHistoryResource>(resource: visitHistoryResource, requestBody: nil, method: "GET")
+        visitHistoryRequest = MindbodyAPIRequest<VisitHistoryResource>(resource: visitHistoryResource, requestBody: nil, method: "GET")
         
         visitHistoryRequest?.addAuthKey(authToken: self.accessToken)
         visitHistoryRequest?.execute(){[weak self]
@@ -100,7 +100,7 @@ class RefreshingProgressViewModel: ObservableObject{
                 for visit in realResponse.Visits{
                     
                     self?.classIds.append(visit.ClassId ?? 0)
-                    print("classIds:  \(self?.classIds)")
+                    print("classIds:  \(String(describing: self?.classIds))")
                 }
                 
                 
@@ -122,7 +122,7 @@ class RefreshingProgressViewModel: ObservableObject{
     func getWaitlistEntries(onCompletion:@escaping()->Void){
        
         let waitlistEntriesResource = WaitlistEntriesResource()
-        waitlistEntriesRequest = APIRequest<WaitlistEntriesResource>(resource: waitlistEntriesResource, requestBody: nil, method: "GET")
+        waitlistEntriesRequest = MindbodyAPIRequest<WaitlistEntriesResource>(resource: waitlistEntriesResource, requestBody: nil, method: "GET")
         
         waitlistEntriesRequest?.addAuthKey(authToken: self.accessToken)
         waitlistEntriesRequest?.execute(){[weak self]
@@ -163,7 +163,7 @@ class RefreshingProgressViewModel: ObservableObject{
         
         let waitlistEntriesOrderResource = WaitlistEntriesOrderResource(classIds: self.classIdWaitlistEntries)
         
-        waitlistEntriesOrderRequest = APIRequest<WaitlistEntriesOrderResource>(resource: waitlistEntriesOrderResource, requestBody: nil, method: "GET")
+        waitlistEntriesOrderRequest = MindbodyAPIRequest<WaitlistEntriesOrderResource>(resource: waitlistEntriesOrderResource, requestBody: nil, method: "GET")
         
         waitlistEntriesOrderRequest?.addAuthKey(authToken: self.accessToken)
         waitlistEntriesOrderRequest?.execute(){[weak self]
@@ -221,7 +221,7 @@ class RefreshingProgressViewModel: ObservableObject{
             print("getClassInfo   \(self.classIds)")
             
             let classHistoryResource = ClassHistoryResource(classIds: self.classIds, endDateTime: self.endDate, startDateTime: self.startDate)
-            classHistoryRequest = APIRequest<ClassHistoryResource>(resource: classHistoryResource, requestBody: nil, method: "GET")
+            classHistoryRequest = MindbodyAPIRequest<ClassHistoryResource>(resource: classHistoryResource, requestBody: nil, method: "GET")
             
             classHistoryRequest?.addAuthKey(authToken: self.accessToken)
             classHistoryRequest?.execute(){[weak self] response in

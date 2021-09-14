@@ -23,8 +23,8 @@ class WeightViewModel: ObservableObject{
     var weight: String = ""
     
             
-    private var tokenAPIRequest: APIRequest<TokenResource>?
-    private var weightRequest: APIRequest<WeightResource>?
+    private var tokenAPIRequest: MindbodyAPIRequest<TokenResource>?
+    private var weightRequest: MindbodyAPIRequest<WeightResource>?
     
     
     func initalize(weight: String){
@@ -41,7 +41,7 @@ class WeightViewModel: ObservableObject{
         
         
         let requestBody = UserTokenRequest(Username: LoginCredential.username, Password: LoginCredential.password)
-        tokenAPIRequest = APIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
+        tokenAPIRequest = MindbodyAPIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
         tokenAPIRequest!.execute{[weak self]  response in
             if let realResponse = response?.OnSuccess{
                 print(realResponse.AccessToken)
@@ -68,7 +68,7 @@ class WeightViewModel: ObservableObject{
         let client = ClientWeight(Id: globalVariable.clientId ?? "", CustomClientFields: customField)
         let requestBody = WeightRequest(Client: client)
         
-        weightRequest = APIRequest<WeightResource>(resource: weightResource, requestBody: requestBody, method: "POST")
+        weightRequest = MindbodyAPIRequest<WeightResource>(resource: weightResource, requestBody: requestBody, method: "POST")
         weightRequest?.addAuthKey(authToken: authToken)
         weightRequest?.execute(){[weak self]
             response in

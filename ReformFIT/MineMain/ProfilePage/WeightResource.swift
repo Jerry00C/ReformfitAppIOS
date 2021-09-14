@@ -10,7 +10,7 @@ import Foundation
 
 
 
-struct WeightResource: APIResource{
+struct WeightResource: MindbodyAPIResource{
 
     
     typealias ResponseModelType = WeightSResponse
@@ -25,7 +25,7 @@ struct WeightResource: APIResource{
 }
 
 
-struct WeightSResponse: MindbodyResponseType{
+struct WeightSResponse: GeneralResponseType{
     typealias onSuccessResponse = UpdateResponse
     
     typealias onErrorResponse = ErrorResponse

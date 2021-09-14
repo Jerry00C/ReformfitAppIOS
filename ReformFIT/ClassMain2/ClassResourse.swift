@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ClassResource: APIResource{
+struct ClassResource: MindbodyAPIResource{
 
     
     typealias ResponseModelType = ClassInfoSResponse
@@ -29,7 +29,7 @@ struct ClassResource: APIResource{
    
     
 }
-struct ClassInfoSResponse: MindbodyResponseType{
+struct ClassInfoSResponse: GeneralResponseType{
     typealias onSuccessResponse = ClassInfoResponse
     
     typealias onErrorResponse = ErrorResponse

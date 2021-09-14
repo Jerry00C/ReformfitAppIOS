@@ -9,7 +9,7 @@ import Foundation
 
 
 
-struct SignupResource: APIResource{
+struct SignupResource: MindbodyAPIResource{
 
     
     typealias ResponseModelType = SignupSResponse
@@ -24,7 +24,7 @@ struct SignupResource: APIResource{
 }
 
 
-struct SignupSResponse: MindbodyResponseType{
+struct SignupSResponse: GeneralResponseType{
     typealias onSuccessResponse = SignupResponse
     
     typealias onErrorResponse = ErrorResponse

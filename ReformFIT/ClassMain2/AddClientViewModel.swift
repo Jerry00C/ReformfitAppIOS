@@ -23,15 +23,15 @@ class AddClientViewModel: ObservableObject{
         print("classId   \(classId)")
     }
     
-    private var tokenAPIRequest: APIRequest<TokenResource>?
-    private var addClientRequest: APIRequest<AddClientResource>?
+    private var tokenAPIRequest: MindbodyAPIRequest<TokenResource>?
+    private var addClientRequest: MindbodyAPIRequest<AddClientResource>?
     
     func addClientToClass(onCompletion: @escaping()->Void){
         
         loading = true
         let tokenResource = TokenResource(queries: nil)
         let requestBody = UserTokenRequest(Username: LoginCredential.username, Password: LoginCredential.password)
-        tokenAPIRequest = APIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
+        tokenAPIRequest = MindbodyAPIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
         tokenAPIRequest!.execute{[weak self]  response in
             if let realResponse = response?.OnSuccess{
                 print(realResponse.AccessToken)
@@ -53,14 +53,14 @@ class AddClientViewModel: ObservableObject{
         let requestBody = AddClientRequest(ClientId: clientId, ClassId: classId, Test: false, RequirePayment: true, Waitlist: true, WaitlistEntryId: 0, ClientServiceId: 0, CrossRegionalBooking: false, CrossRegionalBookingClientServiceSiteId: 0)
         
         
-        addClientRequest = APIRequest<AddClientResource>(resource: addClientResource, requestBody: requestBody, method: "POST")
+        addClientRequest = MindbodyAPIRequest<AddClientResource>(resource: addClientResource, requestBody: requestBody, method: "POST")
         addClientRequest?.addAuthKey(authToken: authToken)
         addClientRequest!.execute(){[weak self] response in
             
             
             if let realResponse = response?.OnSuccess{
                 
-                print(realResponse ?? "")
+                print(realResponse )
                 
                 self?.loading = false
                 onCompletion()
@@ -80,7 +80,7 @@ class AddClientViewModel: ObservableObject{
         print("classId : \(String(describing: classId))")
         let requestBody = AddClientRequest(ClientId: clientId, ClassId: classId, Test: false, RequirePayment: true, Waitlist: true, WaitlistEntryId: 0, ClientServiceId: 0, CrossRegionalBooking: false, CrossRegionalBookingClientServiceSiteId: 0)
         
-        addClientRequest = APIRequest<AddClientResource>(resource: addClientResource, requestBody: requestBody, method: "POST")
+        addClientRequest = MindbodyAPIRequest<AddClientResource>(resource: addClientResource, requestBody: requestBody, method: "POST")
         
         print("Url: \(addClientResource.url)")
         addClientRequest!.execute(){[weak self] response in

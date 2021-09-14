@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>359890376547-vsh568garbb8nm7b36v8gedcuh5q630h.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.359890376547-vsh568garbb8nm7b36v8gedcuh5q630h</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAowjjKX9ClsRzQN8vXr4aUbhYzvjlrAz0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>359890376547</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>J.ReformFIT</string>
+	<key>PROJECT_ID</key>
+	<string>reformfitapp-830e1</string>
+	<key>STORAGE_BUCKET</key>
+	<string>reformfitapp-830e1.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:359890376547:ios:9cee3cc62b6dfde3f32556</string>
+</dict>
+</plist>

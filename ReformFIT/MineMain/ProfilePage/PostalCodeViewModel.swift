@@ -17,8 +17,8 @@ class PostalCodeViewModel: ObservableObject{
     var postalCode: String = ""
     
             
-    private var tokenAPIRequest: APIRequest<TokenResource>?
-    private var postalCodeRequest: APIRequest<PostalCodeResource>?
+    private var tokenAPIRequest: MindbodyAPIRequest<TokenResource>?
+    private var postalCodeRequest: MindbodyAPIRequest<PostalCodeResource>?
     
     
     func initalize(postalCode: String){
@@ -33,7 +33,7 @@ class PostalCodeViewModel: ObservableObject{
         loading = true
         let tokenResource = TokenResource(queries: nil)
         let requestBody = UserTokenRequest(Username: LoginCredential.username, Password: LoginCredential.password)
-        tokenAPIRequest = APIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
+        tokenAPIRequest = MindbodyAPIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
         tokenAPIRequest!.execute{[weak self]  response in
             if let realResponse = response?.OnSuccess{
                 print(realResponse.AccessToken)
@@ -58,7 +58,7 @@ class PostalCodeViewModel: ObservableObject{
         let client = ClientPostalCode(Id: globalVariable.clientId ?? "", PostalCode: self.postalCode)
         let requestBody = PostalCodeRequest(Client: client)
         
-        postalCodeRequest = APIRequest<PostalCodeResource>(resource: postalCodeResource, requestBody: requestBody, method: "POST")
+        postalCodeRequest = MindbodyAPIRequest<PostalCodeResource>(resource: postalCodeResource, requestBody: requestBody, method: "POST")
         postalCodeRequest?.addAuthKey(authToken: authToken)
         postalCodeRequest?.execute(){[weak self]
             response in

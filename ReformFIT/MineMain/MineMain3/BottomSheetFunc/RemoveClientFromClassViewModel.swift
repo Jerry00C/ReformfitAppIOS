@@ -17,8 +17,8 @@ class RemoveClientFromClassViewModel: ObservableObject{
     var classId: Int = 0
     var lateCancel: Bool = false
             
-    private var tokenAPIRequest: APIRequest<TokenResource>?
-    private var removeClientFromClassRequest: APIRequest<RemoveClientFromClassResource>?
+    private var tokenAPIRequest: MindbodyAPIRequest<TokenResource>?
+    private var removeClientFromClassRequest: MindbodyAPIRequest<RemoveClientFromClassResource>?
     
     
     func initalize(clientId: String, classId: Int, lateCancel: Bool){
@@ -33,7 +33,7 @@ class RemoveClientFromClassViewModel: ObservableObject{
         loading = true
         let tokenResource = TokenResource(queries: nil)
         let requestBody = UserTokenRequest(Username: LoginCredential.username, Password: LoginCredential.password)
-        tokenAPIRequest = APIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
+        tokenAPIRequest = MindbodyAPIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
         tokenAPIRequest!.execute{[weak self]  response in
             if let realResponse = response?.OnSuccess{
                 print(realResponse.AccessToken)
@@ -59,7 +59,7 @@ class RemoveClientFromClassViewModel: ObservableObject{
         
         let requestBody = RemoveClientFromClassRequest(ClientId: self.clientId, ClassId: self.classId, LateCancel: self.lateCancel)
         
-        removeClientFromClassRequest = APIRequest<RemoveClientFromClassResource>(resource: removeClientFromClassResource, requestBody: requestBody, method: "POST")
+        removeClientFromClassRequest = MindbodyAPIRequest<RemoveClientFromClassResource>(resource: removeClientFromClassResource, requestBody: requestBody, method: "POST")
         removeClientFromClassRequest?.addAuthKey(authToken: authToken)
         removeClientFromClassRequest?.execute(){[weak self]
             response in

@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct AddClientResource: APIResource{
+struct AddClientResource: MindbodyAPIResource{
     typealias ResponseModelType = AddClientSResponse
     typealias RequestModelType = AddClientRequest
     
@@ -33,7 +33,7 @@ struct AddClientResource: APIResource{
 
 
 
-struct AddClientSResponse: MindbodyResponseType{
+struct AddClientSResponse: GeneralResponseType{
     typealias onSuccessResponse = AddClientResponse
     
     typealias onErrorResponse = ErrorResponse

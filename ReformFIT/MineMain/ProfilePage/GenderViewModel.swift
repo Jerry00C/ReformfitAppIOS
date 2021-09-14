@@ -17,8 +17,8 @@ class GenderViewModel: ObservableObject{
     var gender: String = ""
     
             
-    private var tokenAPIRequest: APIRequest<TokenResource>?
-    private var genderRequest: APIRequest<GenderResource>?
+    private var tokenAPIRequest: MindbodyAPIRequest<TokenResource>?
+    private var genderRequest: MindbodyAPIRequest<GenderResource>?
     
     
     func initalize(gender: String){
@@ -33,7 +33,7 @@ class GenderViewModel: ObservableObject{
         loading = true
         let tokenResource = TokenResource(queries: nil)
         let requestBody = UserTokenRequest(Username: LoginCredential.username, Password: LoginCredential.password)
-        tokenAPIRequest = APIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
+        tokenAPIRequest = MindbodyAPIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
         tokenAPIRequest!.execute{[weak self]  response in
             if let realResponse = response?.OnSuccess{
                 print(realResponse.AccessToken)
@@ -58,7 +58,7 @@ class GenderViewModel: ObservableObject{
         let client = ClientGender(Id: globalVariable.clientId ?? "", Gender: self.gender)
         let requestBody = GenderRequest(Client: client)
         
-        genderRequest = APIRequest<GenderResource>(resource: genderResource, requestBody: requestBody, method: "POST")
+        genderRequest = MindbodyAPIRequest<GenderResource>(resource: genderResource, requestBody: requestBody, method: "POST")
         genderRequest?.addAuthKey(authToken: authToken)
         genderRequest?.execute(){[weak self]
             response in
@@ -66,7 +66,7 @@ class GenderViewModel: ObservableObject{
             
             if let realResponse = response?.OnSuccess{
                 self?.loading = false
-                print("response: \(String(describing: response))")
+                print("response: \(String(describing: realResponse))")
                 onCompletion()
             }
             else if let realResponse = response?.OnError{

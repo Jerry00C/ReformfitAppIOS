@@ -10,7 +10,7 @@ import Foundation
 
 
 
-struct SigninResource: APIResource{
+struct SigninResource: MindbodyAPIResource{
 
     
     typealias ResponseModelType = SigninSResponse
@@ -31,7 +31,7 @@ struct SigninResource: APIResource{
 
 
 
-struct SigninSResponse: MindbodyResponseType{
+struct SigninSResponse: GeneralResponseType{
     typealias onSuccessResponse = SigninResponse
     
     typealias onErrorResponse = ErrorResponse

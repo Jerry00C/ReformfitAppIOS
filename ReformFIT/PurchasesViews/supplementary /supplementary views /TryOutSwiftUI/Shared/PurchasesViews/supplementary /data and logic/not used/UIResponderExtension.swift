@@ -1,0 +1,32 @@
+//
+//  UIResponderExtension.swift
+//  TryOutSwiftUI
+//
+//  Created by Chen Chen on 2021-08-12.
+//
+
+//MARK: this UIresponder along withkeyboard adaptive is not used currenty
+
+
+import Foundation
+
+import SwiftUI
+
+extension UIResponder {
+    static var currentFirstResponder: UIResponder? {
+        _currentFirstResponder = nil
+        UIApplication.shared.sendAction(#selector(UIResponder.findFirstResponder(_:)), to: nil, from: nil, for: nil)
+        return _currentFirstResponder
+    }
+
+    private static weak var _currentFirstResponder: UIResponder?
+
+    @objc private func findFirstResponder(_ sender: Any) {
+        UIResponder._currentFirstResponder = self
+    }
+
+    var globalFrame: CGRect? {
+        guard let view = self as? UIView else { return nil }
+        return view.superview?.convert(view.frame, to: nil)
+    }
+}

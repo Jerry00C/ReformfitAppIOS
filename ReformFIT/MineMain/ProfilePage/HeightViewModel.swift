@@ -17,8 +17,8 @@ class HeightViewModel: ObservableObject{
     var height: String = ""
     
             
-    private var tokenAPIRequest: APIRequest<TokenResource>?
-    private var heightRequest: APIRequest<HeightResource>?
+    private var tokenAPIRequest: MindbodyAPIRequest<TokenResource>?
+    private var heightRequest: MindbodyAPIRequest<HeightResource>?
     
     
     func initalize(height: String){
@@ -35,7 +35,7 @@ class HeightViewModel: ObservableObject{
         
         
         let requestBody = UserTokenRequest(Username: LoginCredential.username, Password: LoginCredential.password)
-        tokenAPIRequest = APIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
+        tokenAPIRequest = MindbodyAPIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
         tokenAPIRequest!.execute{[weak self]  response in
             if let realResponse = response?.OnSuccess{
                 print(realResponse.AccessToken)
@@ -62,7 +62,7 @@ class HeightViewModel: ObservableObject{
         let client = ClientHeight(Id: globalVariable.clientId ?? "", CustomClientFields: customField)
         let requestBody = HeightRequest(Client: client)
         
-        heightRequest = APIRequest<HeightResource>(resource: heightResource, requestBody: requestBody, method: "POST")
+        heightRequest = MindbodyAPIRequest<HeightResource>(resource: heightResource, requestBody: requestBody, method: "POST")
         heightRequest?.addAuthKey(authToken: authToken)
         heightRequest?.execute(){[weak self]
             response in
@@ -70,7 +70,7 @@ class HeightViewModel: ObservableObject{
             
             if let realResponse = response?.OnSuccess{
                 self?.loading = false
-                print("response: \(String(describing: response))")
+                print("response: \(String(describing: realResponse))")
                 onCompletion()
             }
             else if let realResponse = response?.OnError{

@@ -9,7 +9,7 @@ import Foundation
 
 
 
-struct RemoveClientFromClassResource: APIResource{
+struct RemoveClientFromClassResource: MindbodyAPIResource{
 
     
     typealias ResponseModelType = RemoveClientFromClassSResponse
@@ -24,7 +24,7 @@ struct RemoveClientFromClassResource: APIResource{
 }
 
 
-struct RemoveClientFromClassSResponse: MindbodyResponseType{
+struct RemoveClientFromClassSResponse: GeneralResponseType{
     typealias onSuccessResponse = RemoveClientFromClassResponse
     
     typealias onErrorResponse = ErrorResponse

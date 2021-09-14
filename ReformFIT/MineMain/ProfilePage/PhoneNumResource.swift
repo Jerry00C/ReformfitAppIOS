@@ -9,7 +9,7 @@ import Foundation
 
 
 
-struct PhoneNumResource: APIResource{
+struct PhoneNumResource: MindbodyAPIResource{
 
     
     typealias ResponseModelType = PhoneNumSResponse
@@ -24,7 +24,7 @@ struct PhoneNumResource: APIResource{
 }
 
 
-struct PhoneNumSResponse: MindbodyResponseType{
+struct PhoneNumSResponse: GeneralResponseType{
     typealias onSuccessResponse = UpdateResponse
     
     typealias onErrorResponse = ErrorResponse

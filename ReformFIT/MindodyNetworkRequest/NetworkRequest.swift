@@ -9,7 +9,7 @@ import Foundation
 
 
 protocol NetworkRequest: AnyObject {
-    associatedtype ResponseType:MindbodyResponseType
+    associatedtype ResponseType:GeneralResponseType
     associatedtype RequestType
     var requestMethod:String {get }
     var requestHeaders: [String: String] {get set}

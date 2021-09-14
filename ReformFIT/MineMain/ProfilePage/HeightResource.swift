@@ -9,7 +9,7 @@ import Foundation
 
 
 
-struct HeightResource: APIResource{
+struct HeightResource: MindbodyAPIResource{
 
     
     typealias ResponseModelType = HeightSResponse
@@ -24,7 +24,7 @@ struct HeightResource: APIResource{
 }
 
 
-struct HeightSResponse: MindbodyResponseType{
+struct HeightSResponse: GeneralResponseType{
     typealias onSuccessResponse = UpdateResponse
     
     typealias onErrorResponse = ErrorResponse

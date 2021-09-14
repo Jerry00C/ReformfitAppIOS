@@ -20,7 +20,7 @@ struct LocationInfo: View {
     
     @ObservedObject var locationViewModel: LocationViewModel = LocationViewModel()
     
-    @State var screenActive: Bool = false
+    @State var screenActive: Bool = false // change to false
     
     
     @State var scrollViewOverFlow: Bool = false
@@ -600,7 +600,7 @@ struct LAddress: View{
                         .foregroundColor(Color("white"))
                         .onTapGesture {
                             let urlO = URL(string: "http://maps.apple.com/?q=ReformFit")
-                            print(urlO)
+//                            print(urlO)
                             if(UIApplication.shared.canOpenURL(urlO!)){
                                 UIApplication.shared.open(urlO!, options: [:], completionHandler: nil)
                             }

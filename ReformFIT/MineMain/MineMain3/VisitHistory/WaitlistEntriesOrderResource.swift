@@ -9,7 +9,7 @@ import Foundation
 
 
 
-struct WaitlistEntriesOrderResource: APIResource{
+struct WaitlistEntriesOrderResource: MindbodyAPIResource{
 
     
     typealias ResponseModelType = WaitlistEntriesOrderSResponse
@@ -39,7 +39,7 @@ struct WaitlistEntriesOrderResource: APIResource{
 }
 
 
-struct WaitlistEntriesOrderSResponse: MindbodyResponseType{
+struct WaitlistEntriesOrderSResponse: GeneralResponseType{
     typealias onSuccessResponse = WaitlistEntriesOrderResponse
     
     typealias onErrorResponse = ErrorResponse

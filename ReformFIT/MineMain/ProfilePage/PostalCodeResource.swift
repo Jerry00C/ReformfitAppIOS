@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct PostalCodeResource: APIResource{
+struct PostalCodeResource: MindbodyAPIResource{
 
     
     typealias ResponseModelType = PostalCodeSResponse
@@ -23,7 +23,7 @@ struct PostalCodeResource: APIResource{
 }
 
 
-struct PostalCodeSResponse: MindbodyResponseType{
+struct PostalCodeSResponse: GeneralResponseType{
     typealias onSuccessResponse = UpdateResponse
     
     typealias onErrorResponse = ErrorResponse

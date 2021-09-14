@@ -143,7 +143,7 @@ extension MineMain1{
         
         print("MineMain1 refreshing")
         
-        print("wristband brand  \(globalVariable.client?.wristBandBrand)")
+        print("wristband brand  \(String(describing: globalVariable.client?.wristBandBrand))")
         
         wristBandBrand = globalVariable.client?.wristBandBrand ?? ""
         
@@ -176,6 +176,17 @@ extension MineMain1{
 
 
 struct ExtentedFuncView: View{
+    @State var YOUJIUDataPage:Bool = false
+    @State var purchasePage:Bool = false
+    @State var blogPage:Bool = false
+    @State var BMICalculatorPage:Bool = false
+    @State var BMRCalculatorPage:Bool = false
+    @State var TDEECalculatorPage:Bool = false
+
+
+
+
+
     var extendedFuncGrid1 = [["wifi","体测数据"],["wifi","更衣室"],["wifi","健康配餐"],["wifi","BMI计算"]]
     
     var extendedFuncGrid2 = [["wifi","购买课包"],["wifi","最新Blog"],["wifi","BMR计算"],["wifi","TDEE计算"]]
@@ -200,6 +211,14 @@ struct ExtentedFuncView: View{
                                     .foregroundColor(Color("white"))
                                     .font(.caption)
                             }
+                            .onTapGesture {
+                                if row == 0{
+                                    YOUJIUDataPage = true
+                                }
+                                else if row == 3{
+                                    BMICalculatorPage = true
+                                }
+                            }
                             Spacer()
                             
                     }
@@ -207,21 +226,83 @@ struct ExtentedFuncView: View{
                 
                 HStack{
                     Spacer()
-                    ForEach(0..<extendedFuncGrid1.count){ row in
+                    ForEach(0..<extendedFuncGrid2.count){ row in
                             
                             VStack{
-                                Image(extendedFuncGrid1[row][0])
+                                Image(extendedFuncGrid2[row][0])
                                     .resizable()
                                     .frame(width: 22, height: 22)
                                     .foregroundColor(Color("yellow"))
-                                Text(extendedFuncGrid1[row][1])
+                                Text(extendedFuncGrid2[row][1])
                                     .foregroundColor(Color("white"))
                                     .font(.caption)
+                            }
+                            .onTapGesture {
+                                if row == 0{
+                                    purchasePage = true
+                                }
+                                else if row == 1{
+                                    blogPage = true
+                                }
+                                else if row == 2{
+                                    BMRCalculatorPage = true
+                                }
+                                else if row == 3{
+                                    TDEECalculatorPage = true
+                                }
                             }
                             Spacer()
                             
                     }
+                    
                 }
+                NavigationLink(
+                    destination: PurchaseTabsView(),
+                    isActive: self.$purchasePage,
+                    label: {
+                        
+
+                        EmptyView()
+                            
+                    })
+                NavigationLink(
+                    destination: BlogPage(),
+                    isActive: self.$blogPage,
+                    label: {
+                        
+
+                        EmptyView()
+                            
+                    })
+                
+                NavigationLink(
+                    destination: BMICalculatorView(),
+                    isActive: self.$BMICalculatorPage,
+                    label: {
+                        
+
+                        EmptyView()
+                            
+                    })
+                
+                NavigationLink(
+                    destination: BMRCalculatorView(),
+                    isActive: self.$BMRCalculatorPage,
+                    label: {
+                    
+
+                        EmptyView()
+                            
+                    })
+                
+                NavigationLink(
+                    destination: TDEECalculatorView(),
+                    isActive: self.$TDEECalculatorPage,
+                    label: {
+                    
+                        EmptyView()
+                            
+                    })
             }
             .padding()
             .padding(.horizontal, 0)
@@ -229,6 +310,7 @@ struct ExtentedFuncView: View{
         .background(Color("black3"))
         .frame(width: UIScreen.main.bounds.width*0.92, alignment: .center)
         .cornerRadius(10)
+        .edgesIgnoringSafeArea(.bottom)
     }
 }
 

@@ -9,7 +9,7 @@ import Foundation
 
 
 
-struct GenderResource: APIResource{
+struct GenderResource: MindbodyAPIResource{
 
     
     typealias ResponseModelType = GenderSResponse
@@ -24,7 +24,7 @@ struct GenderResource: APIResource{
 }
 
 
-struct GenderSResponse: MindbodyResponseType{
+struct GenderSResponse: GeneralResponseType{
     typealias onSuccessResponse = UpdateResponse
     
     typealias onErrorResponse = ErrorResponse

@@ -1142,7 +1142,7 @@ extension ProfilePage{
                     let clientId = document.data()!["ClientId"]!
                     print("clientId: \(clientId)")
                     
-                    globalVariable.clientId = clientId as! String
+                    globalVariable.clientId = clientId as? String
                     
                     signInMindbody()
                 }

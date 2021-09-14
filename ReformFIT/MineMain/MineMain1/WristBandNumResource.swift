@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct WristBandNumResource: APIResource{
+struct WristBandNumResource: MindbodyAPIResource{
 
     
     typealias ResponseModelType = WristBandNumSResponse
@@ -22,7 +22,7 @@ struct WristBandNumResource: APIResource{
 }
 
 
-struct WristBandNumSResponse: MindbodyResponseType{
+struct WristBandNumSResponse: GeneralResponseType{
     typealias onSuccessResponse = UpdateResponse
     
     typealias onErrorResponse = ErrorResponse

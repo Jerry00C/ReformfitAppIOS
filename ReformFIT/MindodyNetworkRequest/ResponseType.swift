@@ -8,7 +8,7 @@
 import Foundation
 
 
-protocol MindbodyResponseType{
+protocol GeneralResponseType{
     associatedtype onSuccessResponse : Decodable
     associatedtype onErrorResponse :Decodable
     

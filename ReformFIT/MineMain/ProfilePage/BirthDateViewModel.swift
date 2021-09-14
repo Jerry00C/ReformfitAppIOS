@@ -18,8 +18,8 @@ class BirthDateViewModel: ObservableObject{
     var birthDate: String = ""
     
             
-    private var tokenAPIRequest: APIRequest<TokenResource>?
-    private var birthDateRequest: APIRequest<BirthDateResource>?
+    private var tokenAPIRequest: MindbodyAPIRequest<TokenResource>?
+    private var birthDateRequest: MindbodyAPIRequest<BirthDateResource>?
     
     
     func initalize(birthDate: String){
@@ -34,7 +34,7 @@ class BirthDateViewModel: ObservableObject{
         loading = true
         let tokenResource = TokenResource(queries: nil)
         let requestBody = UserTokenRequest(Username: LoginCredential.username, Password: LoginCredential.password)
-        tokenAPIRequest = APIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
+        tokenAPIRequest = MindbodyAPIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
         tokenAPIRequest!.execute{[weak self]  response in
             if let realResponse = response?.OnSuccess{
                 print(realResponse.AccessToken)
@@ -59,7 +59,7 @@ class BirthDateViewModel: ObservableObject{
         let client = ClientBirthDate(Id: globalVariable.clientId ?? "", BirthDate: self.birthDate)
         let requestBody = BirthDateRequest(Client: client)
         
-        birthDateRequest = APIRequest<BirthDateResource>(resource: birthDateResource, requestBody: requestBody, method: "POST")
+        birthDateRequest = MindbodyAPIRequest<BirthDateResource>(resource: birthDateResource, requestBody: requestBody, method: "POST")
         birthDateRequest?.addAuthKey(authToken: authToken)
         birthDateRequest?.execute(){[weak self]
             response in
