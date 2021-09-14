@@ -10,7 +10,8 @@ import Foundation
 
 
 
-struct TokenResource: APIResource{
+struct TokenResource: MindbodyAPIResource{
+    
 
     
     typealias ResponseModelType = UserTokenResponse
@@ -25,13 +26,22 @@ struct TokenResource: APIResource{
 }
 
 
-struct UserTokenResponse: Decodable{
-    let AccessToken: String
+struct UserTokenResponse: GeneralResponseType{
+    typealias onSuccessResponse = SuccessfulTokenResponse
+    typealias onErrorResponse = ErrorResponse
+    
+    var OnSuccess: onSuccessResponse?
+    var OnError: onErrorResponse?
+    
 }
 struct UserTokenRequest: Encodable{
     let Username: String
     let Password: String
     
+}
+
+struct SuccessfulTokenResponse: Decodable{
+    let AccessToken: String
 }
 
 

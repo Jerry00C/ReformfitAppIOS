@@ -6,13 +6,14 @@
 //
 
 import Foundation
+import SwiftUI
 
 
 class ContractPurchaseViewModel: ObservableObject{
     
     
     @Published var obtainedContract : Contract?
-    private var locationId: Int
+    var locationId: Int
     @Published var loading = false
     
     init(locationId:Int) {
@@ -20,17 +21,19 @@ class ContractPurchaseViewModel: ObservableObject{
     }
     
     
-    private var tokenAPIRequest: APIRequest<TokenResource>?
-    private var contractAPIRequest: APIRequest<ContractResource>?
+    private var tokenAPIRequest: MindbodyAPIRequest<TokenResource>?
+    private var contractAPIRequest: MindbodyAPIRequest<ContractResource>?
     
     
     func loadContract(contractId:String, onCompletion: @escaping()->Void){
-        loading = true
+        withAnimation{
+            loading = true
+        }
         let tokenResource = TokenResource(queries: nil)
         let requestBody = UserTokenRequest(Username: LoginCredential.username, Password: LoginCredential.password)
-        tokenAPIRequest = APIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
+        tokenAPIRequest = MindbodyAPIRequest<TokenResource>(resource: tokenResource, requestBody: requestBody, method:"POST")
         tokenAPIRequest!.execute{ [weak self] response in
-            if let realResponse = response {
+            if let realResponse = response?.OnSuccess {
                 print(realResponse.AccessToken)
                 self?.requestContract(contractId: contractId, authToken: realResponse.AccessToken,onCompletion: onCompletion)
     
@@ -47,15 +50,16 @@ class ContractPurchaseViewModel: ObservableObject{
         
         let contractResource = ContractResource(id: contractId, location: locationId)
         
-        contractAPIRequest = APIRequest<ContractResource>(resource: contractResource, requestBody: nil, method: "GET")
+        contractAPIRequest = MindbodyAPIRequest<ContractResource>(resource: contractResource, requestBody: nil, method: "GET")
         contractAPIRequest?.addAuthKey(authToken: authToken)
         print(contractAPIRequest?.requestHeaders ?? "")
-        contractAPIRequest?.execute(){[weak self]
-            response in
-            if let realResponse  = response {
+        contractAPIRequest?.execute{ [weak self] response in
+            if let realResponse  = response?.OnSuccess {
                 let resultContract = realResponse.contracts[0]
                 self?.obtainedContract = resultContract
-                self?.loading = false
+                withAnimation{
+                    self?.loading = false
+                }
                 onCompletion()
             }
         

@@ -9,8 +9,8 @@ import Foundation
 
 
 
-protocol APIResource {
-    associatedtype ResponseModelType: Decodable
+protocol MindbodyAPIResource {
+    associatedtype ResponseModelType: GeneralResponseType
     associatedtype RequestModelType: Encodable
     var methodPath: String { get }
     var queries: [URLQueryItem]? {get set}
@@ -19,7 +19,7 @@ protocol APIResource {
     
 }
 
-extension APIResource {
+extension MindbodyAPIResource {
     var url: URL {
         let baseUrl = "https://api.mindbodyonline.com"
         var components = URLComponents(string: baseUrl)!

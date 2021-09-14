@@ -8,7 +8,17 @@
 import Foundation
 
 
-struct ServiceResponse: Decodable{
+struct ServiceResponse: GeneralResponseType{
+    
+    typealias onSuccessResponse = SuccessfulServiceResponse
+    typealias onErrorResponse = ErrorResponse
+    
+    var OnSuccess: onSuccessResponse?
+    var OnError: onErrorResponse?
+}
+
+
+struct SuccessfulServiceResponse: Decodable{
     
     let services: [Service]
     enum CodingKeys: String, CodingKey{
@@ -26,7 +36,7 @@ struct ServiceRequest: Encodable{
     
 }
 
-struct ServiceResource: APIResource{
+struct ServiceResource: MindbodyAPIResource{
 
     
     typealias ResponseModelType = ServiceResponse

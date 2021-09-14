@@ -7,7 +7,16 @@
 
 import Foundation
 
-struct ContractResponse: Decodable{
+struct ContractResponse: GeneralResponseType{
+    
+    typealias onSuccessResponse = SuccessfulContractResponse
+    typealias onErrorResponse = ErrorResponse
+    
+    var OnSuccess: onSuccessResponse?
+    var OnError: onErrorResponse?
+}
+
+struct SuccessfulContractResponse: Decodable{
     
     let contracts: [Contract]
     enum CodingKeys: String, CodingKey{
@@ -51,7 +60,7 @@ struct ContractRequest: Encodable{
     
 }
 
-struct ContractResource: APIResource{
+struct ContractResource: MindbodyAPIResource{
 
     
     typealias ResponseModelType = ContractResponse

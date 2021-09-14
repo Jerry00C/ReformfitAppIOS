@@ -17,26 +17,6 @@
 		090E1B1E26EBBE9E0016CF09 /* Service4Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E1B1D26EBBE9E0016CF09 /* Service4Info.swift */; };
 		090E5A5326D95F1400EC6F9A /* RefreshingHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E5A5226D95F1400EC6F9A /* RefreshingHistoryViewModel.swift */; };
 		090E5A5626D96F4400EC6F9A /* PhoneNumResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E5A5526D96F4400EC6F9A /* PhoneNumResource.swift */; };
-		090E5A5D26D99C6B00EC6F9A /* AccessTokenInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E5A5C26D99C6B00EC6F9A /* AccessTokenInitializer.swift */; };
-		090E5A6126D99C7300EC6F9A /* ContractPurchaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E5A6026D99C7300EC6F9A /* ContractPurchaseViewModel.swift */; };
-		090E5A6226D99C7300EC6F9A /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E5A5E26D99C7200EC6F9A /* ErrorResponse.swift */; };
-		090E5A6326D99C7300EC6F9A /* ContractPurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E5A5F26D99C7300EC6F9A /* ContractPurchaseManager.swift */; };
-		090E5A6926D99C8200EC6F9A /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E5A6826D99C8200EC6F9A /* NetworkRequest.swift */; };
-		090E5A6A26D99C8200EC6F9A /* MindbodyAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E5A6726D99C8100EC6F9A /* MindbodyAPIRequest.swift */; };
-		090E5A6B26D99C8200EC6F9A /* ServicePurchaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E5A6526D99C8000EC6F9A /* ServicePurchaseViewModel.swift */; };
-		090E5A6C26D99C8200EC6F9A /* ShoppingCartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E5A6626D99C8100EC6F9A /* ShoppingCartManager.swift */; };
-		090E5A6D26D99C8200EC6F9A /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E5A6426D99C8000EC6F9A /* ResponseType.swift */; };
-		090E5A7826D99CAE00EC6F9A /* MindbodyAPIResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E5A7026D99CA800EC6F9A /* MindbodyAPIResource.swift */; };
-		090E5A7926D99CAE00EC6F9A /* ContractPurchaseResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E5A7126D99CA900EC6F9A /* ContractPurchaseResource.swift */; };
-		090E5A7A26D99CAE00EC6F9A /* ServiceResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E5A7226D99CAA00EC6F9A /* ServiceResource.swift */; };
-		090E5A7B26D99CAE00EC6F9A /* ShoppingCartResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E5A7326D99CAB00EC6F9A /* ShoppingCartResource.swift */; };
-		090E5A7C26D99CAE00EC6F9A /* GiftCardBalanceResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E5A7426D99CAC00EC6F9A /* GiftCardBalanceResource.swift */; };
-		090E5A7D26D99CAE00EC6F9A /* AccessTokenResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E5A7526D99CAD00EC6F9A /* AccessTokenResource.swift */; };
-		090E5A7E26D99CAE00EC6F9A /* ContractResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E5A7626D99CAE00EC6F9A /* ContractResource.swift */; };
-		090E5A8226D99D1600EC6F9A /* GetClientCreditCardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E5A8026D99D1500EC6F9A /* GetClientCreditCardResource.swift */; };
-		090E5A8326D99D1600EC6F9A /* UpdateCreditCardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E5A8126D99D1600EC6F9A /* UpdateCreditCardResource.swift */; };
-		090E5A8726D99D3700EC6F9A /* GetClientDirectDebitResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E5A8526D99D3600EC6F9A /* GetClientDirectDebitResource.swift */; };
-		090E5A8826D99D3700EC6F9A /* UpdateClientDirectDebitResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E5A8626D99D3700EC6F9A /* UpdateClientDirectDebitResource.swift */; };
 		09244BCC26BB317D00D34DC0 /* ClassViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09244BCB26BB317D00D34DC0 /* ClassViewModel.swift */; };
 		09244BCF26BB5C2300D34DC0 /* MineMain1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09244BCE26BB5C2300D34DC0 /* MineMain1.swift */; };
 		09244BD326BB5C5100D34DC0 /* MineMain3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09244BD226BB5C5100D34DC0 /* MineMain3.swift */; };
@@ -67,10 +47,6 @@
 		098A07F726C4AEA5004CDB24 /* ClassMainTab1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A07F626C4AEA5004CDB24 /* ClassMainTab1.swift */; };
 		098A07F926C4AEB4004CDB24 /* ClassMainTab2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A07F826C4AEB4004CDB24 /* ClassMainTab2.swift */; };
 		098A080326C61471004CDB24 /* PrivateTrainerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098A080226C61471004CDB24 /* PrivateTrainerInfo.swift */; };
-		098F6B8E26D9AC20003D0FA8 /* OfficialCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F6B8A26D9AC1D003D0FA8 /* OfficialCalendar.swift */; };
-		098F6B8F26D9AC20003D0FA8 /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F6B8B26D9AC1E003D0FA8 /* RoundedCorners.swift */; };
-		098F6B9026D9AC20003D0FA8 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F6B8C26D9AC1F003D0FA8 /* BottomSheetView.swift */; };
-		098F6B9126D9AC20003D0FA8 /* AccurateSubtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F6B8D26D9AC20003D0FA8 /* AccurateSubtraction.swift */; };
 		098F6B9526DE5C18003D0FA8 /* ToastMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F6B9426DE5C17003D0FA8 /* ToastMessage.swift */; };
 		098F6B9726DEC777003D0FA8 /* CheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F6B9626DEC777003D0FA8 /* CheckView.swift */; };
 		098F6B9B26DEF0B6003D0FA8 /* PhoneNumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F6B9A26DEF0B6003D0FA8 /* PhoneNumViewModel.swift */; };
@@ -85,7 +61,6 @@
 		098F6BAD26DFDFDE003D0FA8 /* PostalCodeResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F6BAC26DFDFDE003D0FA8 /* PostalCodeResource.swift */; };
 		098F6BAF26DFDFEA003D0FA8 /* PostalCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F6BAE26DFDFEA003D0FA8 /* PostalCodeViewModel.swift */; };
 		09A2B74026D5B1E10088AFE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09A2B73F26D5B1E10088AFE0 /* GoogleService-Info.plist */; };
-		09A2B74526D6D8750088AFE0 /* ModalDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2B74426D6C7C00088AFE0 /* ModalDialogView.swift */; };
 		09A2B74726D6F4550088AFE0 /* SignupResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2B74626D6F4540088AFE0 /* SignupResource.swift */; };
 		09A2B74926D6F4720088AFE0 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2B74826D6F4720088AFE0 /* SignupViewModel.swift */; };
 		09A2B74B26D713E10088AFE0 /* SigninViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2B74A26D713DF0088AFE0 /* SigninViewModel.swift */; };
@@ -96,48 +71,73 @@
 		09A2B75726D83CD50088AFE0 /* ClassHistoryResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2B75626D83CD50088AFE0 /* ClassHistoryResource.swift */; };
 		09A2B75926D844EF0088AFE0 /* RefreshingProgressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2B75826D844EF0088AFE0 /* RefreshingProgressViewModel.swift */; };
 		0EBFCC8FA84CC71C7B43F3FA /* Pods_ReformFIT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10657C8EEA58E6F6F0426C68 /* Pods_ReformFIT.framework */; };
-		336058DC26EEB44A00D9EAAA /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336058D526EEB44A00D9EAAA /* CheckBoxView.swift */; };
-		336058DD26EEB44A00D9EAAA /* tableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336058D626EEB44A00D9EAAA /* tableItem.swift */; };
-		336058DE26EEB44A00D9EAAA /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336058D726EEB44A00D9EAAA /* WebView.swift */; };
-		336058DF26EEB44A00D9EAAA /* TestSelectorOverlap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336058D826EEB44A00D9EAAA /* TestSelectorOverlap.swift */; };
-		336058E026EEB44A00D9EAAA /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336058D926EEB44A00D9EAAA /* LoadingScreen.swift */; };
-		336058E126EEB44A00D9EAAA /* RadioGroupButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336058DA26EEB44A00D9EAAA /* RadioGroupButton.swift */; };
-		336058E226EEB44A00D9EAAA /* collpaseTextExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336058DB26EEB44A00D9EAAA /* collpaseTextExample.swift */; };
-		33605B9926EEB6D800D9EAAA /* Blog6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605B8826EEB6D800D9EAAA /* Blog6View.swift */; };
-		33605B9A26EEB6D800D9EAAA /* Blog7View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605B8926EEB6D800D9EAAA /* Blog7View.swift */; };
-		33605B9B26EEB6D800D9EAAA /* BlogPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605B8A26EEB6D800D9EAAA /* BlogPage.swift */; };
-		33605B9C26EEB6D800D9EAAA /* Blog1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605B8B26EEB6D800D9EAAA /* Blog1View.swift */; };
-		33605B9D26EEB6D800D9EAAA /* Blog4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605B8C26EEB6D800D9EAAA /* Blog4View.swift */; };
-		33605B9E26EEB6D800D9EAAA /* Blog2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605B8D26EEB6D800D9EAAA /* Blog2View.swift */; };
-		33605B9F26EEB6D800D9EAAA /* Blog5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605B8E26EEB6D800D9EAAA /* Blog5View.swift */; };
-		33605BA026EEB6D800D9EAAA /* Blog3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605B8F26EEB6D800D9EAAA /* Blog3View.swift */; };
-		33605BA126EEB6D800D9EAAA /* TDEECalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605B9026EEB6D800D9EAAA /* TDEECalculatorView.swift */; };
-		33605BA226EEB6D800D9EAAA /* BMICalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605B9126EEB6D800D9EAAA /* BMICalculatorView.swift */; };
-		33605BA326EEB6D800D9EAAA /* TDEECalculationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605B9326EEB6D800D9EAAA /* TDEECalculationManager.swift */; };
-		33605BA426EEB6D800D9EAAA /* BMRCalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605B9426EEB6D800D9EAAA /* BMRCalculatorModel.swift */; };
-		33605BA526EEB6D800D9EAAA /* BMICalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605B9526EEB6D800D9EAAA /* BMICalculatorModel.swift */; };
-		33605BA626EEB6D800D9EAAA /* BMRCalculationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605B9626EEB6D800D9EAAA /* BMRCalculationManager.swift */; };
-		33605BA726EEB6D800D9EAAA /* BMICalculationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605B9726EEB6D800D9EAAA /* BMICalculationManager.swift */; };
-		33605BA826EEB6D800D9EAAA /* BMRCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605B9826EEB6D800D9EAAA /* BMRCalculatorView.swift */; };
-		33605BAD26EEB79300D9EAAA /* KeyboardAvoider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605BAA26EEB79300D9EAAA /* KeyboardAvoider.swift */; };
-		33605BAE26EEB79300D9EAAA /* KeyboardAvoidancePreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605BAB26EEB79300D9EAAA /* KeyboardAvoidancePreference.swift */; };
-		33605BAF26EEB79300D9EAAA /* KeyboardAvoiding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605BAC26EEB79300D9EAAA /* KeyboardAvoiding.swift */; };
-		33605BB226EEB81C00D9EAAA /* KeyboardHidingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605BB026EEB81C00D9EAAA /* KeyboardHidingExtension.swift */; };
-		33605BB326EEB81C00D9EAAA /* PurchasedItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605BB126EEB81C00D9EAAA /* PurchasedItemModel.swift */; };
-		33605BB626EEB8AA00D9EAAA /* PassPurchasingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605BB426EEB8A900D9EAAA /* PassPurchasingPage.swift */; };
-		33605BB726EEB8AA00D9EAAA /* ContractPurchasingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605BB526EEB8A900D9EAAA /* ContractPurchasingPage.swift */; };
-		33605BBC26EEBB3500D9EAAA /* PrivateLessonPurchasePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605BB926EEBB3500D9EAAA /* PrivateLessonPurchasePreview.swift */; };
-		33605BBD26EEBB3500D9EAAA /* PurchaseTabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605BBA26EEBB3500D9EAAA /* PurchaseTabsView.swift */; };
-		33605BBE26EEBB3500D9EAAA /* GroupClassPurchasePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605BBB26EEBB3500D9EAAA /* GroupClassPurchasePreview.swift */; };
-		33605BC226EEBB6500D9EAAA /* PrivateLessonPurchasingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605BC026EEBB6500D9EAAA /* PrivateLessonPurchasingPage.swift */; };
-		33605BC326EEBB6500D9EAAA /* CompPrepPurchasingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605BC126EEBB6500D9EAAA /* CompPrepPurchasingPage.swift */; };
-		33605C8B26EEC8EF00D9EAAA /* PaymentPurchaseHistoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605C8A26EEC8EF00D9EAAA /* PaymentPurchaseHistoryPage.swift */; };
-		33605C8F26EECA0800D9EAAA /* PaymentPurchaseHistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605C8E26EECA0800D9EAAA /* PaymentPurchaseHistoryManager.swift */; };
-		33605C9526EECC6800D9EAAA /* PurchaseHistoryResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605C9426EECC6800D9EAAA /* PurchaseHistoryResource.swift */; };
-		336E161926B8A65E000E2281 /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E161026B8A65E000E2281 /* DividerView.swift */; };
-		336E161A26B8A65E000E2281 /* PurchaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E161226B8A65E000E2281 /* PurchaseData.swift */; };
-		336E161B26B8A65E000E2281 /* PurchaseOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E161326B8A65E000E2281 /* PurchaseOption.swift */; };
-		336E161C26B8A65E000E2281 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E161426B8A65E000E2281 /* GlobalVariables.swift */; };
+		33605D6F26F0448400D9EAAA /* Blog6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605D6E26F0448400D9EAAA /* Blog6View.swift */; };
+		33605D7126F0460600D9EAAA /* Blog1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605D7026F0460600D9EAAA /* Blog1View.swift */; };
+		33605D7326F0462D00D9EAAA /* Blog2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605D7226F0462D00D9EAAA /* Blog2View.swift */; };
+		33605D7526F0465300D9EAAA /* Blog3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605D7426F0465300D9EAAA /* Blog3View.swift */; };
+		33605D7726F0467400D9EAAA /* Blog4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605D7626F0467400D9EAAA /* Blog4View.swift */; };
+		33605D7926F0472200D9EAAA /* Blog5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605D7826F0472200D9EAAA /* Blog5View.swift */; };
+		33605D7B26F0474600D9EAAA /* Blog7View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605D7A26F0474600D9EAAA /* Blog7View.swift */; };
+		33605D7D26F0477300D9EAAA /* BlogPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605D7C26F0477300D9EAAA /* BlogPage.swift */; };
+		33605D7F26F0492A00D9EAAA /* TDEECalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605D7E26F0492A00D9EAAA /* TDEECalculatorView.swift */; };
+		33605D8126F0495000D9EAAA /* BMICalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605D8026F0495000D9EAAA /* BMICalculatorView.swift */; };
+		33605D8326F0498C00D9EAAA /* BMRCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605D8226F0498C00D9EAAA /* BMRCalculatorView.swift */; };
+		33605D8626F04BD200D9EAAA /* TDEECalculationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605D8526F04BD200D9EAAA /* TDEECalculationManager.swift */; };
+		33605D8826F04C2E00D9EAAA /* BMRCalculationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605D8726F04C2E00D9EAAA /* BMRCalculationManager.swift */; };
+		33605D8A26F04C5C00D9EAAA /* BMICalculationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605D8926F04C5C00D9EAAA /* BMICalculationManager.swift */; };
+		33605D8C26F04C9D00D9EAAA /* BMRCalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605D8B26F04C9D00D9EAAA /* BMRCalculatorModel.swift */; };
+		33605D8E26F04CBE00D9EAAA /* BMICalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605D8D26F04CBE00D9EAAA /* BMICalculatorModel.swift */; };
+		33605D9426F05DEC00D9EAAA /* GetClientDirectDebitResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605D9326F05DEB00D9EAAA /* GetClientDirectDebitResource.swift */; };
+		33605D9626F05E1300D9EAAA /* UpdateClientDIrectDebitResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605D9526F05E1300D9EAAA /* UpdateClientDIrectDebitResource.swift */; };
+		33605D9826F05E3800D9EAAA /* GetClientCreditCardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605D9726F05E3800D9EAAA /* GetClientCreditCardResource.swift */; };
+		33605D9A26F05E7A00D9EAAA /* UpdateCreditCardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605D9926F05E7A00D9EAAA /* UpdateCreditCardResource.swift */; };
+		33605D9C26F05F4C00D9EAAA /* AccessTokenResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605D9B26F05F4C00D9EAAA /* AccessTokenResource.swift */; };
+		33605D9E26F05F8A00D9EAAA /* PurchaseHistoryResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605D9D26F05F8A00D9EAAA /* PurchaseHistoryResource.swift */; };
+		33605DA026F05FA700D9EAAA /* ContractPurchaseResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605D9F26F05FA700D9EAAA /* ContractPurchaseResource.swift */; };
+		33605DA226F05FC100D9EAAA /* ContractResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DA126F05FC100D9EAAA /* ContractResource.swift */; };
+		33605DA426F05FE800D9EAAA /* GiftCardBalanceResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DA326F05FE800D9EAAA /* GiftCardBalanceResource.swift */; };
+		33605DA626F0600200D9EAAA /* MindbodyAPIResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DA526F0600200D9EAAA /* MindbodyAPIResource.swift */; };
+		33605DA826F0602B00D9EAAA /* ServiceResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DA726F0602B00D9EAAA /* ServiceResource.swift */; };
+		33605DAA26F0607E00D9EAAA /* ShoppingCartResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DA926F0607E00D9EAAA /* ShoppingCartResource.swift */; };
+		33605DAC26F060BB00D9EAAA /* AccessTokenInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DAB26F060BB00D9EAAA /* AccessTokenInitializer.swift */; };
+		33605DAE26F060F500D9EAAA /* ContractPurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DAD26F060F500D9EAAA /* ContractPurchaseManager.swift */; };
+		33605DB026F0612200D9EAAA /* ContractPurchaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DAF26F0612200D9EAAA /* ContractPurchaseViewModel.swift */; };
+		33605DB226F0621300D9EAAA /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DB126F0621300D9EAAA /* ErrorResponse.swift */; };
+		33605DB426F0622E00D9EAAA /* MindbodyAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DB326F0622E00D9EAAA /* MindbodyAPIRequest.swift */; };
+		33605DB626F0625F00D9EAAA /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DB526F0625F00D9EAAA /* NetworkRequest.swift */; };
+		33605DB826F0627700D9EAAA /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DB726F0627700D9EAAA /* ResponseType.swift */; };
+		33605DBA26F0629500D9EAAA /* ServicePurchaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DB926F0629500D9EAAA /* ServicePurchaseViewModel.swift */; };
+		33605DBC26F062C200D9EAAA /* ShoppingCartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DBB26F062C200D9EAAA /* ShoppingCartManager.swift */; };
+		33605DBE26F0635E00D9EAAA /* PaymentPurchaseHistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DBD26F0635E00D9EAAA /* PaymentPurchaseHistoryManager.swift */; };
+		33605DC226F0658400D9EAAA /* PaymentPurchaseHistoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DC126F0658400D9EAAA /* PaymentPurchaseHistoryPage.swift */; };
+		33605DC526F065F400D9EAAA /* PrivateLessonPurchasingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DC426F065F400D9EAAA /* PrivateLessonPurchasingPage.swift */; };
+		33605DC726F0663B00D9EAAA /* CompPrepPurchasingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DC626F0663B00D9EAAA /* CompPrepPurchasingPage.swift */; };
+		33605DCA26F066E600D9EAAA /* PrivateLessonPurchasePreviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DC926F066E600D9EAAA /* PrivateLessonPurchasePreviews.swift */; };
+		33605DCC26F0670500D9EAAA /* PurchaseTabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DCB26F0670500D9EAAA /* PurchaseTabsView.swift */; };
+		33605DCE26F0673300D9EAAA /* GroupClassPurchasePreviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DCD26F0673300D9EAAA /* GroupClassPurchasePreviews.swift */; };
+		33605DD126F0679A00D9EAAA /* ContractPurchasingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DD026F0679A00D9EAAA /* ContractPurchasingPage.swift */; };
+		33605DD326F067BC00D9EAAA /* PassPurchasingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DD226F067BC00D9EAAA /* PassPurchasingPage.swift */; };
+		33605DD726F0682D00D9EAAA /* KeyboardAvoider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DD626F0682D00D9EAAA /* KeyboardAvoider.swift */; };
+		33605DD926F0685100D9EAAA /* KeyboardAvoidancePreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DD826F0685100D9EAAA /* KeyboardAvoidancePreference.swift */; };
+		33605DDB26F068A000D9EAAA /* KeyboardAvoiding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DDA26F068A000D9EAAA /* KeyboardAvoiding.swift */; };
+		33605DDE26F068F300D9EAAA /* OfficialCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DDD26F068F300D9EAAA /* OfficialCalendar.swift */; };
+		33605DE026F0692400D9EAAA /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DDF26F0692400D9EAAA /* CheckBoxView.swift */; };
+		33605DE226F0693E00D9EAAA /* CollapseTextExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DE126F0693E00D9EAAA /* CollapseTextExample.swift */; };
+		33605DE426F0697F00D9EAAA /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DE326F0697F00D9EAAA /* LoadingScreen.swift */; };
+		33605DE626F069A400D9EAAA /* RadioGroupButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DE526F069A400D9EAAA /* RadioGroupButton.swift */; };
+		33605DE826F069D800D9EAAA /* tableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DE726F069D800D9EAAA /* tableItem.swift */; };
+		33605DEA26F06A0700D9EAAA /* TestSelectorOverlap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DE926F06A0700D9EAAA /* TestSelectorOverlap.swift */; };
+		33605DEC26F06A2800D9EAAA /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DEB26F06A2800D9EAAA /* WebView.swift */; };
+		33605DEE26F06A4B00D9EAAA /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DED26F06A4B00D9EAAA /* BottomSheetView.swift */; };
+		33605DF026F06A8C00D9EAAA /* ModalDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DEF26F06A8C00D9EAAA /* ModalDialogView.swift */; };
+		33605DF226F06AA400D9EAAA /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DF126F06AA400D9EAAA /* DividerView.swift */; };
+		33605DF426F06AC500D9EAAA /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DF326F06AC500D9EAAA /* RoundedCorners.swift */; };
+		33605DF726F06B0D00D9EAAA /* AccurateSubtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DF626F06B0D00D9EAAA /* AccurateSubtraction.swift */; };
+		33605DF926F06B4F00D9EAAA /* KeyboardHidingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DF826F06B4F00D9EAAA /* KeyboardHidingExtension.swift */; };
+		33605DFB26F06B8400D9EAAA /* PurchasedItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DFA26F06B8400D9EAAA /* PurchasedItemModel.swift */; };
+		33605DFD26F06BB900D9EAAA /* PurchaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DFC26F06BB900D9EAAA /* PurchaseData.swift */; };
+		33605DFF26F06BCF00D9EAAA /* PurchaseOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605DFE26F06BCF00D9EAAA /* PurchaseOption.swift */; };
+		33605E0126F06BE600D9EAAA /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33605E0026F06BE600D9EAAA /* GlobalVariables.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -151,26 +151,6 @@
 		090E1B1D26EBBE9E0016CF09 /* Service4Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service4Info.swift; sourceTree = "<group>"; };
 		090E5A5226D95F1400EC6F9A /* RefreshingHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshingHistoryViewModel.swift; sourceTree = "<group>"; };
 		090E5A5526D96F4400EC6F9A /* PhoneNumResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumResource.swift; sourceTree = "<group>"; };
-		090E5A5C26D99C6B00EC6F9A /* AccessTokenInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenInitializer.swift; sourceTree = "<group>"; };
-		090E5A5E26D99C7200EC6F9A /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
-		090E5A5F26D99C7300EC6F9A /* ContractPurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractPurchaseManager.swift; sourceTree = "<group>"; };
-		090E5A6026D99C7300EC6F9A /* ContractPurchaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractPurchaseViewModel.swift; sourceTree = "<group>"; };
-		090E5A6426D99C8000EC6F9A /* ResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseType.swift; sourceTree = "<group>"; };
-		090E5A6526D99C8000EC6F9A /* ServicePurchaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePurchaseViewModel.swift; sourceTree = "<group>"; };
-		090E5A6626D99C8100EC6F9A /* ShoppingCartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartManager.swift; sourceTree = "<group>"; };
-		090E5A6726D99C8100EC6F9A /* MindbodyAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindbodyAPIRequest.swift; sourceTree = "<group>"; };
-		090E5A6826D99C8200EC6F9A /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
-		090E5A7026D99CA800EC6F9A /* MindbodyAPIResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MindbodyAPIResource.swift; sourceTree = "<group>"; };
-		090E5A7126D99CA900EC6F9A /* ContractPurchaseResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContractPurchaseResource.swift; sourceTree = "<group>"; };
-		090E5A7226D99CAA00EC6F9A /* ServiceResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceResource.swift; sourceTree = "<group>"; };
-		090E5A7326D99CAB00EC6F9A /* ShoppingCartResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCartResource.swift; sourceTree = "<group>"; };
-		090E5A7426D99CAC00EC6F9A /* GiftCardBalanceResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftCardBalanceResource.swift; sourceTree = "<group>"; };
-		090E5A7526D99CAD00EC6F9A /* AccessTokenResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenResource.swift; sourceTree = "<group>"; };
-		090E5A7626D99CAE00EC6F9A /* ContractResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContractResource.swift; sourceTree = "<group>"; };
-		090E5A8026D99D1500EC6F9A /* GetClientCreditCardResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetClientCreditCardResource.swift; sourceTree = "<group>"; };
-		090E5A8126D99D1600EC6F9A /* UpdateCreditCardResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateCreditCardResource.swift; sourceTree = "<group>"; };
-		090E5A8526D99D3600EC6F9A /* GetClientDirectDebitResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetClientDirectDebitResource.swift; sourceTree = "<group>"; };
-		090E5A8626D99D3700EC6F9A /* UpdateClientDirectDebitResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateClientDirectDebitResource.swift; sourceTree = "<group>"; };
 		09244BCB26BB317D00D34DC0 /* ClassViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassViewModel.swift; sourceTree = "<group>"; };
 		09244BCE26BB5C2300D34DC0 /* MineMain1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineMain1.swift; sourceTree = "<group>"; };
 		09244BD226BB5C5100D34DC0 /* MineMain3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineMain3.swift; sourceTree = "<group>"; };
@@ -204,10 +184,6 @@
 		098A07F626C4AEA5004CDB24 /* ClassMainTab1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassMainTab1.swift; sourceTree = "<group>"; };
 		098A07F826C4AEB4004CDB24 /* ClassMainTab2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassMainTab2.swift; sourceTree = "<group>"; };
 		098A080226C61471004CDB24 /* PrivateTrainerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateTrainerInfo.swift; sourceTree = "<group>"; };
-		098F6B8A26D9AC1D003D0FA8 /* OfficialCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfficialCalendar.swift; sourceTree = "<group>"; };
-		098F6B8B26D9AC1E003D0FA8 /* RoundedCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
-		098F6B8C26D9AC1F003D0FA8 /* BottomSheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
-		098F6B8D26D9AC20003D0FA8 /* AccurateSubtraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccurateSubtraction.swift; sourceTree = "<group>"; };
 		098F6B9426DE5C17003D0FA8 /* ToastMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastMessage.swift; sourceTree = "<group>"; };
 		098F6B9626DEC777003D0FA8 /* CheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckView.swift; sourceTree = "<group>"; };
 		098F6B9A26DEF0B6003D0FA8 /* PhoneNumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumViewModel.swift; sourceTree = "<group>"; };
@@ -222,7 +198,6 @@
 		098F6BAC26DFDFDE003D0FA8 /* PostalCodeResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostalCodeResource.swift; sourceTree = "<group>"; };
 		098F6BAE26DFDFEA003D0FA8 /* PostalCodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostalCodeViewModel.swift; sourceTree = "<group>"; };
 		09A2B73F26D5B1E10088AFE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		09A2B74426D6C7C00088AFE0 /* ModalDialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDialogView.swift; sourceTree = "<group>"; };
 		09A2B74626D6F4540088AFE0 /* SignupResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupResource.swift; sourceTree = "<group>"; };
 		09A2B74826D6F4720088AFE0 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 		09A2B74A26D713DF0088AFE0 /* SigninViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewModel.swift; sourceTree = "<group>"; };
@@ -233,48 +208,73 @@
 		09A2B75626D83CD50088AFE0 /* ClassHistoryResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassHistoryResource.swift; sourceTree = "<group>"; };
 		09A2B75826D844EF0088AFE0 /* RefreshingProgressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshingProgressViewModel.swift; sourceTree = "<group>"; };
 		10657C8EEA58E6F6F0426C68 /* Pods_ReformFIT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReformFIT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		336058D526EEB44A00D9EAAA /* CheckBoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckBoxView.swift; path = "../../../../../../Desktop/TryOutSwiftUI/Shared/PurchasesViews/supplementary /supplementary views /CheckBoxView.swift"; sourceTree = "<group>"; };
-		336058D626EEB44A00D9EAAA /* tableItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tableItem.swift; path = "../../../../../../Desktop/TryOutSwiftUI/Shared/PurchasesViews/supplementary /supplementary views /tableItem.swift"; sourceTree = "<group>"; };
-		336058D726EEB44A00D9EAAA /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebView.swift; path = "../../../../../../Desktop/TryOutSwiftUI/Shared/PurchasesViews/supplementary /supplementary views /WebView.swift"; sourceTree = "<group>"; };
-		336058D826EEB44A00D9EAAA /* TestSelectorOverlap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestSelectorOverlap.swift; path = "../../../../../../Desktop/TryOutSwiftUI/Shared/PurchasesViews/supplementary /supplementary views /TestSelectorOverlap.swift"; sourceTree = "<group>"; };
-		336058D926EEB44A00D9EAAA /* LoadingScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadingScreen.swift; path = "../../../../../../Desktop/TryOutSwiftUI/Shared/PurchasesViews/supplementary /supplementary views /LoadingScreen.swift"; sourceTree = "<group>"; };
-		336058DA26EEB44A00D9EAAA /* RadioGroupButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RadioGroupButton.swift; path = "../../../../../../Desktop/TryOutSwiftUI/Shared/PurchasesViews/supplementary /supplementary views /RadioGroupButton.swift"; sourceTree = "<group>"; };
-		336058DB26EEB44A00D9EAAA /* collpaseTextExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = collpaseTextExample.swift; path = "../../../../../../Desktop/TryOutSwiftUI/Shared/PurchasesViews/supplementary /supplementary views /collpaseTextExample.swift"; sourceTree = "<group>"; };
-		33605B8826EEB6D800D9EAAA /* Blog6View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blog6View.swift; sourceTree = "<group>"; };
-		33605B8926EEB6D800D9EAAA /* Blog7View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blog7View.swift; sourceTree = "<group>"; };
-		33605B8A26EEB6D800D9EAAA /* BlogPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogPage.swift; sourceTree = "<group>"; };
-		33605B8B26EEB6D800D9EAAA /* Blog1View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blog1View.swift; sourceTree = "<group>"; };
-		33605B8C26EEB6D800D9EAAA /* Blog4View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blog4View.swift; sourceTree = "<group>"; };
-		33605B8D26EEB6D800D9EAAA /* Blog2View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blog2View.swift; sourceTree = "<group>"; };
-		33605B8E26EEB6D800D9EAAA /* Blog5View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blog5View.swift; sourceTree = "<group>"; };
-		33605B8F26EEB6D800D9EAAA /* Blog3View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blog3View.swift; sourceTree = "<group>"; };
-		33605B9026EEB6D800D9EAAA /* TDEECalculatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDEECalculatorView.swift; sourceTree = "<group>"; };
-		33605B9126EEB6D800D9EAAA /* BMICalculatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMICalculatorView.swift; sourceTree = "<group>"; };
-		33605B9326EEB6D800D9EAAA /* TDEECalculationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDEECalculationManager.swift; sourceTree = "<group>"; };
-		33605B9426EEB6D800D9EAAA /* BMRCalculatorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMRCalculatorModel.swift; sourceTree = "<group>"; };
-		33605B9526EEB6D800D9EAAA /* BMICalculatorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMICalculatorModel.swift; sourceTree = "<group>"; };
-		33605B9626EEB6D800D9EAAA /* BMRCalculationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMRCalculationManager.swift; sourceTree = "<group>"; };
-		33605B9726EEB6D800D9EAAA /* BMICalculationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMICalculationManager.swift; sourceTree = "<group>"; };
-		33605B9826EEB6D800D9EAAA /* BMRCalculatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMRCalculatorView.swift; sourceTree = "<group>"; };
-		33605BAA26EEB79300D9EAAA /* KeyboardAvoider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAvoider.swift; sourceTree = "<group>"; };
-		33605BAB26EEB79300D9EAAA /* KeyboardAvoidancePreference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAvoidancePreference.swift; sourceTree = "<group>"; };
-		33605BAC26EEB79300D9EAAA /* KeyboardAvoiding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAvoiding.swift; sourceTree = "<group>"; };
-		33605BB026EEB81C00D9EAAA /* KeyboardHidingExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardHidingExtension.swift; path = "../../../../../../Desktop/TryOutSwiftUI/Shared/PurchasesViews/supplementary /data and logic/KeyboardHidingExtension.swift"; sourceTree = "<group>"; };
-		33605BB126EEB81C00D9EAAA /* PurchasedItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PurchasedItemModel.swift; path = "../../../../../../Desktop/TryOutSwiftUI/Shared/PurchasesViews/supplementary /data and logic/PurchasedItemModel.swift"; sourceTree = "<group>"; };
-		33605BB426EEB8A900D9EAAA /* PassPurchasingPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PassPurchasingPage.swift; path = "../../../../../Desktop/TryOutSwiftUI/Shared/PurchasesViews/display of purchase detail/PassPurchasingPage.swift"; sourceTree = "<group>"; };
-		33605BB526EEB8A900D9EAAA /* ContractPurchasingPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContractPurchasingPage.swift; path = "../../../../../Desktop/TryOutSwiftUI/Shared/PurchasesViews/display of purchase detail/ContractPurchasingPage.swift"; sourceTree = "<group>"; };
-		33605BB926EEBB3500D9EAAA /* PrivateLessonPurchasePreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivateLessonPurchasePreview.swift; sourceTree = "<group>"; };
-		33605BBA26EEBB3500D9EAAA /* PurchaseTabsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseTabsView.swift; sourceTree = "<group>"; };
-		33605BBB26EEBB3500D9EAAA /* GroupClassPurchasePreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupClassPurchasePreview.swift; sourceTree = "<group>"; };
-		33605BC026EEBB6500D9EAAA /* PrivateLessonPurchasingPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivateLessonPurchasingPage.swift; sourceTree = "<group>"; };
-		33605BC126EEBB6500D9EAAA /* CompPrepPurchasingPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompPrepPurchasingPage.swift; sourceTree = "<group>"; };
-		33605C8A26EEC8EF00D9EAAA /* PaymentPurchaseHistoryPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentPurchaseHistoryPage.swift; sourceTree = "<group>"; };
-		33605C8E26EECA0800D9EAAA /* PaymentPurchaseHistoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaymentPurchaseHistoryManager.swift; path = ../../../../Desktop/TryOutSwiftUI/Shared/MindodyNetworkRequest/PaymentPurchaseHistoryManager.swift; sourceTree = "<group>"; };
-		33605C9426EECC6800D9EAAA /* PurchaseHistoryResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PurchaseHistoryResource.swift; path = "../../../../../Desktop/TryOutSwiftUI/Shared/MindodyNetworkRequest/Mindbody API Resources/PurchaseHistoryResource.swift"; sourceTree = "<group>"; };
-		336E161026B8A65E000E2281 /* DividerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
-		336E161226B8A65E000E2281 /* PurchaseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseData.swift; sourceTree = "<group>"; };
-		336E161326B8A65E000E2281 /* PurchaseOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseOption.swift; sourceTree = "<group>"; };
-		336E161426B8A65E000E2281 /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		33605D6E26F0448400D9EAAA /* Blog6View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blog6View.swift; sourceTree = "<group>"; };
+		33605D7026F0460600D9EAAA /* Blog1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blog1View.swift; sourceTree = "<group>"; };
+		33605D7226F0462D00D9EAAA /* Blog2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blog2View.swift; sourceTree = "<group>"; };
+		33605D7426F0465300D9EAAA /* Blog3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blog3View.swift; sourceTree = "<group>"; };
+		33605D7626F0467400D9EAAA /* Blog4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blog4View.swift; sourceTree = "<group>"; };
+		33605D7826F0472200D9EAAA /* Blog5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blog5View.swift; sourceTree = "<group>"; };
+		33605D7A26F0474600D9EAAA /* Blog7View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blog7View.swift; sourceTree = "<group>"; };
+		33605D7C26F0477300D9EAAA /* BlogPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPage.swift; sourceTree = "<group>"; };
+		33605D7E26F0492A00D9EAAA /* TDEECalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDEECalculatorView.swift; sourceTree = "<group>"; };
+		33605D8026F0495000D9EAAA /* BMICalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalculatorView.swift; sourceTree = "<group>"; };
+		33605D8226F0498C00D9EAAA /* BMRCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMRCalculatorView.swift; sourceTree = "<group>"; };
+		33605D8526F04BD200D9EAAA /* TDEECalculationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDEECalculationManager.swift; sourceTree = "<group>"; };
+		33605D8726F04C2E00D9EAAA /* BMRCalculationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMRCalculationManager.swift; sourceTree = "<group>"; };
+		33605D8926F04C5C00D9EAAA /* BMICalculationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalculationManager.swift; sourceTree = "<group>"; };
+		33605D8B26F04C9D00D9EAAA /* BMRCalculatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMRCalculatorModel.swift; sourceTree = "<group>"; };
+		33605D8D26F04CBE00D9EAAA /* BMICalculatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalculatorModel.swift; sourceTree = "<group>"; };
+		33605D9326F05DEB00D9EAAA /* GetClientDirectDebitResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetClientDirectDebitResource.swift; sourceTree = "<group>"; };
+		33605D9526F05E1300D9EAAA /* UpdateClientDIrectDebitResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateClientDIrectDebitResource.swift; sourceTree = "<group>"; };
+		33605D9726F05E3800D9EAAA /* GetClientCreditCardResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetClientCreditCardResource.swift; sourceTree = "<group>"; };
+		33605D9926F05E7A00D9EAAA /* UpdateCreditCardResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCreditCardResource.swift; sourceTree = "<group>"; };
+		33605D9B26F05F4C00D9EAAA /* AccessTokenResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenResource.swift; sourceTree = "<group>"; };
+		33605D9D26F05F8A00D9EAAA /* PurchaseHistoryResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseHistoryResource.swift; sourceTree = "<group>"; };
+		33605D9F26F05FA700D9EAAA /* ContractPurchaseResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractPurchaseResource.swift; sourceTree = "<group>"; };
+		33605DA126F05FC100D9EAAA /* ContractResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractResource.swift; sourceTree = "<group>"; };
+		33605DA326F05FE800D9EAAA /* GiftCardBalanceResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardBalanceResource.swift; sourceTree = "<group>"; };
+		33605DA526F0600200D9EAAA /* MindbodyAPIResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindbodyAPIResource.swift; sourceTree = "<group>"; };
+		33605DA726F0602B00D9EAAA /* ServiceResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceResource.swift; sourceTree = "<group>"; };
+		33605DA926F0607E00D9EAAA /* ShoppingCartResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartResource.swift; sourceTree = "<group>"; };
+		33605DAB26F060BB00D9EAAA /* AccessTokenInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenInitializer.swift; sourceTree = "<group>"; };
+		33605DAD26F060F500D9EAAA /* ContractPurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractPurchaseManager.swift; sourceTree = "<group>"; };
+		33605DAF26F0612200D9EAAA /* ContractPurchaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractPurchaseViewModel.swift; sourceTree = "<group>"; };
+		33605DB126F0621300D9EAAA /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		33605DB326F0622E00D9EAAA /* MindbodyAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindbodyAPIRequest.swift; sourceTree = "<group>"; };
+		33605DB526F0625F00D9EAAA /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		33605DB726F0627700D9EAAA /* ResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseType.swift; sourceTree = "<group>"; };
+		33605DB926F0629500D9EAAA /* ServicePurchaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePurchaseViewModel.swift; sourceTree = "<group>"; };
+		33605DBB26F062C200D9EAAA /* ShoppingCartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartManager.swift; sourceTree = "<group>"; };
+		33605DBD26F0635E00D9EAAA /* PaymentPurchaseHistoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentPurchaseHistoryManager.swift; sourceTree = "<group>"; };
+		33605DC126F0658400D9EAAA /* PaymentPurchaseHistoryPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentPurchaseHistoryPage.swift; sourceTree = "<group>"; };
+		33605DC426F065F400D9EAAA /* PrivateLessonPurchasingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateLessonPurchasingPage.swift; sourceTree = "<group>"; };
+		33605DC626F0663B00D9EAAA /* CompPrepPurchasingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompPrepPurchasingPage.swift; sourceTree = "<group>"; };
+		33605DC926F066E600D9EAAA /* PrivateLessonPurchasePreviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateLessonPurchasePreviews.swift; sourceTree = "<group>"; };
+		33605DCB26F0670500D9EAAA /* PurchaseTabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseTabsView.swift; sourceTree = "<group>"; };
+		33605DCD26F0673300D9EAAA /* GroupClassPurchasePreviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupClassPurchasePreviews.swift; sourceTree = "<group>"; };
+		33605DD026F0679A00D9EAAA /* ContractPurchasingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractPurchasingPage.swift; sourceTree = "<group>"; };
+		33605DD226F067BC00D9EAAA /* PassPurchasingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassPurchasingPage.swift; sourceTree = "<group>"; };
+		33605DD626F0682D00D9EAAA /* KeyboardAvoider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAvoider.swift; sourceTree = "<group>"; };
+		33605DD826F0685100D9EAAA /* KeyboardAvoidancePreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAvoidancePreference.swift; sourceTree = "<group>"; };
+		33605DDA26F068A000D9EAAA /* KeyboardAvoiding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAvoiding.swift; sourceTree = "<group>"; };
+		33605DDD26F068F300D9EAAA /* OfficialCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficialCalendar.swift; sourceTree = "<group>"; };
+		33605DDF26F0692400D9EAAA /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
+		33605DE126F0693E00D9EAAA /* CollapseTextExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapseTextExample.swift; sourceTree = "<group>"; };
+		33605DE326F0697F00D9EAAA /* LoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
+		33605DE526F069A400D9EAAA /* RadioGroupButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioGroupButton.swift; sourceTree = "<group>"; };
+		33605DE726F069D800D9EAAA /* tableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableItem.swift; sourceTree = "<group>"; };
+		33605DE926F06A0700D9EAAA /* TestSelectorOverlap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSelectorOverlap.swift; sourceTree = "<group>"; };
+		33605DEB26F06A2800D9EAAA /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		33605DED26F06A4B00D9EAAA /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		33605DEF26F06A8C00D9EAAA /* ModalDialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDialogView.swift; sourceTree = "<group>"; };
+		33605DF126F06AA400D9EAAA /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
+		33605DF326F06AC500D9EAAA /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
+		33605DF626F06B0D00D9EAAA /* AccurateSubtraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccurateSubtraction.swift; sourceTree = "<group>"; };
+		33605DF826F06B4F00D9EAAA /* KeyboardHidingExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHidingExtension.swift; sourceTree = "<group>"; };
+		33605DFA26F06B8400D9EAAA /* PurchasedItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasedItemModel.swift; sourceTree = "<group>"; };
+		33605DFC26F06BB900D9EAAA /* PurchaseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseData.swift; sourceTree = "<group>"; };
+		33605DFE26F06BCF00D9EAAA /* PurchaseOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseOption.swift; sourceTree = "<group>"; };
+		33605E0026F06BE600D9EAAA /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		5B0FFD7593D1DEF9A9867DAC /* Pods-ReformFIT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReformFIT.debug.xcconfig"; path = "Target Support Files/Pods-ReformFIT/Pods-ReformFIT.debug.xcconfig"; sourceTree = "<group>"; };
 		DF2E11E657F4785E647E430D /* Pods-ReformFIT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReformFIT.release.xcconfig"; path = "Target Support Files/Pods-ReformFIT/Pods-ReformFIT.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -345,59 +345,6 @@
 			path = ProfilePage;
 			sourceTree = "<group>";
 		};
-		090E5A5B26D99C6100EC6F9A /* MindodyNetworkRequest */ = {
-			isa = PBXGroup;
-			children = (
-				090E5A6E26D99C9100EC6F9A /* Mindbody API Resources */,
-				090E5A5C26D99C6B00EC6F9A /* AccessTokenInitializer.swift */,
-				090E5A5F26D99C7300EC6F9A /* ContractPurchaseManager.swift */,
-				090E5A6026D99C7300EC6F9A /* ContractPurchaseViewModel.swift */,
-				090E5A5E26D99C7200EC6F9A /* ErrorResponse.swift */,
-				090E5A6726D99C8100EC6F9A /* MindbodyAPIRequest.swift */,
-				090E5A6826D99C8200EC6F9A /* NetworkRequest.swift */,
-				090E5A6426D99C8000EC6F9A /* ResponseType.swift */,
-				090E5A6526D99C8000EC6F9A /* ServicePurchaseViewModel.swift */,
-				090E5A6626D99C8100EC6F9A /* ShoppingCartManager.swift */,
-				33605C8E26EECA0800D9EAAA /* PaymentPurchaseHistoryManager.swift */,
-			);
-			path = MindodyNetworkRequest;
-			sourceTree = "<group>";
-		};
-		090E5A6E26D99C9100EC6F9A /* Mindbody API Resources */ = {
-			isa = PBXGroup;
-			children = (
-				090E5A8426D99D2300EC6F9A /* direct debit  response request */,
-				090E5A7F26D99CF900EC6F9A /* client credit card response request */,
-				090E5A7526D99CAD00EC6F9A /* AccessTokenResource.swift */,
-				33605C9426EECC6800D9EAAA /* PurchaseHistoryResource.swift */,
-				090E5A7126D99CA900EC6F9A /* ContractPurchaseResource.swift */,
-				090E5A7626D99CAE00EC6F9A /* ContractResource.swift */,
-				090E5A7426D99CAC00EC6F9A /* GiftCardBalanceResource.swift */,
-				090E5A7026D99CA800EC6F9A /* MindbodyAPIResource.swift */,
-				090E5A7226D99CAA00EC6F9A /* ServiceResource.swift */,
-				090E5A7326D99CAB00EC6F9A /* ShoppingCartResource.swift */,
-			);
-			path = "Mindbody API Resources";
-			sourceTree = "<group>";
-		};
-		090E5A7F26D99CF900EC6F9A /* client credit card response request */ = {
-			isa = PBXGroup;
-			children = (
-				090E5A8026D99D1500EC6F9A /* GetClientCreditCardResource.swift */,
-				090E5A8126D99D1600EC6F9A /* UpdateCreditCardResource.swift */,
-			);
-			path = "client credit card response request";
-			sourceTree = "<group>";
-		};
-		090E5A8426D99D2300EC6F9A /* direct debit  response request */ = {
-			isa = PBXGroup;
-			children = (
-				090E5A8526D99D3600EC6F9A /* GetClientDirectDebitResource.swift */,
-				090E5A8626D99D3700EC6F9A /* UpdateClientDirectDebitResource.swift */,
-			);
-			path = "direct debit  response request";
-			sourceTree = "<group>";
-		};
 		09244BCD26BB5C0200D34DC0 /* MineMain */ = {
 			isa = PBXGroup;
 			children = (
@@ -441,14 +388,14 @@
 		092D99E226A668CA006DC5FE /* ReformFIT */ = {
 			isa = PBXGroup;
 			children = (
-				33605B8626EEB6D800D9EAAA /* Expanded functionalities  */,
-				090E5A5B26D99C6100EC6F9A /* MindodyNetworkRequest */,
+				33605D6C26F0426E00D9EAAA /* 1 Expanded functionalities */,
+				33605D8F26F04F4000D9EAAA /* MindbodyNetworkRequest1 */,
 				09A2B74326D6C7B00088AFE0 /* Login_up */,
 				0957A53D26CB2034007BB1CE /* classInfoEx.json */,
 				09244BCD26BB5C0200D34DC0 /* MineMain */,
 				0961DED226B9BFB40077341F /* ClassMain2 */,
 				0961DED126B9BA330077341F /* LocationMain */,
-				336E160726B8A65E000E2281 /* PurchasesViews */,
+				33605DBF26F0640900D9EAAA /* Purchases Views 1 */,
 				092D99FF26B0529D006DC5FE /* MineTab */,
 				092D99F826AF73FA006DC5FE /* MainTab */,
 				092D99E326A668CA006DC5FE /* ReformFITApp.swift */,
@@ -550,148 +497,196 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		33605B8626EEB6D800D9EAAA /* Expanded functionalities  */ = {
+		33605D6C26F0426E00D9EAAA /* 1 Expanded functionalities */ = {
 			isa = PBXGroup;
 			children = (
-				33605B8726EEB6D800D9EAAA /* Blogs */,
-				33605B9026EEB6D800D9EAAA /* TDEECalculatorView.swift */,
-				33605B9126EEB6D800D9EAAA /* BMICalculatorView.swift */,
-				33605B9226EEB6D800D9EAAA /* calculator models */,
-				33605B9826EEB6D800D9EAAA /* BMRCalculatorView.swift */,
+				33605D8426F04A4900D9EAAA /* CalculatorViews */,
+				33605D6D26F042A200D9EAAA /* Blogs */,
 			);
-			name = "Expanded functionalities ";
-			path = "../../../Desktop/TryOutSwiftUI/Shared/Expanded functionalities ";
+			path = "1 Expanded functionalities";
 			sourceTree = "<group>";
 		};
-		33605B8726EEB6D800D9EAAA /* Blogs */ = {
+		33605D6D26F042A200D9EAAA /* Blogs */ = {
 			isa = PBXGroup;
 			children = (
-				33605B8826EEB6D800D9EAAA /* Blog6View.swift */,
-				33605B8926EEB6D800D9EAAA /* Blog7View.swift */,
-				33605B8A26EEB6D800D9EAAA /* BlogPage.swift */,
-				33605B8B26EEB6D800D9EAAA /* Blog1View.swift */,
-				33605B8C26EEB6D800D9EAAA /* Blog4View.swift */,
-				33605B8D26EEB6D800D9EAAA /* Blog2View.swift */,
-				33605B8E26EEB6D800D9EAAA /* Blog5View.swift */,
-				33605B8F26EEB6D800D9EAAA /* Blog3View.swift */,
+				33605D7026F0460600D9EAAA /* Blog1View.swift */,
+				33605D7226F0462D00D9EAAA /* Blog2View.swift */,
+				33605D7426F0465300D9EAAA /* Blog3View.swift */,
+				33605D7626F0467400D9EAAA /* Blog4View.swift */,
+				33605D7826F0472200D9EAAA /* Blog5View.swift */,
+				33605D6E26F0448400D9EAAA /* Blog6View.swift */,
+				33605D7A26F0474600D9EAAA /* Blog7View.swift */,
+				33605D7C26F0477300D9EAAA /* BlogPage.swift */,
 			);
 			path = Blogs;
 			sourceTree = "<group>";
 		};
-		33605B9226EEB6D800D9EAAA /* calculator models */ = {
+		33605D8426F04A4900D9EAAA /* CalculatorViews */ = {
 			isa = PBXGroup;
 			children = (
-				33605B9326EEB6D800D9EAAA /* TDEECalculationManager.swift */,
-				33605B9426EEB6D800D9EAAA /* BMRCalculatorModel.swift */,
-				33605B9526EEB6D800D9EAAA /* BMICalculatorModel.swift */,
-				33605B9626EEB6D800D9EAAA /* BMRCalculationManager.swift */,
-				33605B9726EEB6D800D9EAAA /* BMICalculationManager.swift */,
+				33605D7E26F0492A00D9EAAA /* TDEECalculatorView.swift */,
+				33605D8226F0498C00D9EAAA /* BMRCalculatorView.swift */,
+				33605D8026F0495000D9EAAA /* BMICalculatorView.swift */,
+				33605D8526F04BD200D9EAAA /* TDEECalculationManager.swift */,
+				33605D8726F04C2E00D9EAAA /* BMRCalculationManager.swift */,
+				33605D8926F04C5C00D9EAAA /* BMICalculationManager.swift */,
+				33605D8B26F04C9D00D9EAAA /* BMRCalculatorModel.swift */,
+				33605D8D26F04CBE00D9EAAA /* BMICalculatorModel.swift */,
 			);
-			path = "calculator models";
+			path = CalculatorViews;
 			sourceTree = "<group>";
 		};
-		33605BA926EEB79300D9EAAA /* KeyBoardAvoider */ = {
+		33605D8F26F04F4000D9EAAA /* MindbodyNetworkRequest1 */ = {
 			isa = PBXGroup;
 			children = (
-				33605BAA26EEB79300D9EAAA /* KeyboardAvoider.swift */,
-				33605BAB26EEB79300D9EAAA /* KeyboardAvoidancePreference.swift */,
-				33605BAC26EEB79300D9EAAA /* KeyboardAvoiding.swift */,
+				33605DAB26F060BB00D9EAAA /* AccessTokenInitializer.swift */,
+				33605DAD26F060F500D9EAAA /* ContractPurchaseManager.swift */,
+				33605DAF26F0612200D9EAAA /* ContractPurchaseViewModel.swift */,
+				33605DB126F0621300D9EAAA /* ErrorResponse.swift */,
+				33605DB326F0622E00D9EAAA /* MindbodyAPIRequest.swift */,
+				33605DB526F0625F00D9EAAA /* NetworkRequest.swift */,
+				33605DB726F0627700D9EAAA /* ResponseType.swift */,
+				33605DB926F0629500D9EAAA /* ServicePurchaseViewModel.swift */,
+				33605DBB26F062C200D9EAAA /* ShoppingCartManager.swift */,
+				33605DBD26F0635E00D9EAAA /* PaymentPurchaseHistoryManager.swift */,
+				33605D9026F0509F00D9EAAA /* Mindbody API Resources */,
 			);
-			name = KeyBoardAvoider;
-			path = "../../../../../Desktop/TryOutSwiftUI/Shared/PurchasesViews/supplementary /KeyBoardAvoider";
+			path = MindbodyNetworkRequest1;
 			sourceTree = "<group>";
 		};
-		33605BB826EEBB3500D9EAAA /* display of options */ = {
+		33605D9026F0509F00D9EAAA /* Mindbody API Resources */ = {
 			isa = PBXGroup;
 			children = (
-				33605BB926EEBB3500D9EAAA /* PrivateLessonPurchasePreview.swift */,
-				33605BBA26EEBB3500D9EAAA /* PurchaseTabsView.swift */,
-				33605BBB26EEBB3500D9EAAA /* GroupClassPurchasePreview.swift */,
+				33605D9226F0538800D9EAAA /* client credit card response request */,
+				33605D9126F050F500D9EAAA /* direct debit response request  */,
+				33605D9B26F05F4C00D9EAAA /* AccessTokenResource.swift */,
+				33605D9D26F05F8A00D9EAAA /* PurchaseHistoryResource.swift */,
+				33605D9F26F05FA700D9EAAA /* ContractPurchaseResource.swift */,
+				33605DA126F05FC100D9EAAA /* ContractResource.swift */,
+				33605DA326F05FE800D9EAAA /* GiftCardBalanceResource.swift */,
+				33605DA526F0600200D9EAAA /* MindbodyAPIResource.swift */,
+				33605DA726F0602B00D9EAAA /* ServiceResource.swift */,
+				33605DA926F0607E00D9EAAA /* ShoppingCartResource.swift */,
 			);
-			name = "display of options";
-			path = "../../../../Desktop/TryOutSwiftUI/Shared/PurchasesViews/display of options";
+			path = "Mindbody API Resources";
 			sourceTree = "<group>";
 		};
-		33605BBF26EEBB6500D9EAAA /* display of private lesson purchase detail */ = {
+		33605D9126F050F500D9EAAA /* direct debit response request  */ = {
 			isa = PBXGroup;
 			children = (
-				33605BC026EEBB6500D9EAAA /* PrivateLessonPurchasingPage.swift */,
-				33605BC126EEBB6500D9EAAA /* CompPrepPurchasingPage.swift */,
+				33605D9726F05E3800D9EAAA /* GetClientCreditCardResource.swift */,
+				33605D9926F05E7A00D9EAAA /* UpdateCreditCardResource.swift */,
 			);
-			name = "display of private lesson purchase detail";
-			path = "../../../../Desktop/TryOutSwiftUI/Shared/PurchasesViews/display of private lesson purchase detail";
+			path = "direct debit response request ";
 			sourceTree = "<group>";
 		};
-		33605C8926EEC8EF00D9EAAA /* PurchaseHistoryPage */ = {
+		33605D9226F0538800D9EAAA /* client credit card response request */ = {
 			isa = PBXGroup;
 			children = (
-				33605C8A26EEC8EF00D9EAAA /* PaymentPurchaseHistoryPage.swift */,
+				33605D9326F05DEB00D9EAAA /* GetClientDirectDebitResource.swift */,
+				33605D9526F05E1300D9EAAA /* UpdateClientDIrectDebitResource.swift */,
 			);
-			name = PurchaseHistoryPage;
-			path = ../../../../Desktop/TryOutSwiftUI/Shared/PurchasesViews/PurchaseHistoryPage;
+			path = "client credit card response request";
 			sourceTree = "<group>";
 		};
-		336E160726B8A65E000E2281 /* PurchasesViews */ = {
+		33605DBF26F0640900D9EAAA /* Purchases Views 1 */ = {
 			isa = PBXGroup;
 			children = (
-				33605C8926EEC8EF00D9EAAA /* PurchaseHistoryPage */,
-				33605BBF26EEBB6500D9EAAA /* display of private lesson purchase detail */,
-				33605BB826EEBB3500D9EAAA /* display of options */,
-				336E160826B8A65E000E2281 /* display of purchase detail */,
-				336E160E26B8A65E000E2281 /* supplementary  */,
+				33605DCF26F0676E00D9EAAA /* display of groupclass purchase detail */,
+				33605DC826F0666F00D9EAAA /* display of options */,
+				33605DC326F065B800D9EAAA /* display of private lesson purchase detail */,
+				33605DC026F0644200D9EAAA /* PurchaseHistoryPage */,
+				33605DD426F067DB00D9EAAA /* supplementary */,
 			);
-			path = PurchasesViews;
+			path = "Purchases Views 1";
 			sourceTree = "<group>";
 		};
-		336E160826B8A65E000E2281 /* display of purchase detail */ = {
+		33605DC026F0644200D9EAAA /* PurchaseHistoryPage */ = {
 			isa = PBXGroup;
 			children = (
-				33605BB526EEB8A900D9EAAA /* ContractPurchasingPage.swift */,
-				33605BB426EEB8A900D9EAAA /* PassPurchasingPage.swift */,
+				33605DC126F0658400D9EAAA /* PaymentPurchaseHistoryPage.swift */,
 			);
-			path = "display of purchase detail";
+			path = PurchaseHistoryPage;
 			sourceTree = "<group>";
 		};
-		336E160E26B8A65E000E2281 /* supplementary  */ = {
+		33605DC326F065B800D9EAAA /* display of private lesson purchase detail */ = {
 			isa = PBXGroup;
 			children = (
-				33605BA926EEB79300D9EAAA /* KeyBoardAvoider */,
-				336E160F26B8A65E000E2281 /* supplementary views  */,
-				336E161126B8A65E000E2281 /* data and logic */,
+				33605DC426F065F400D9EAAA /* PrivateLessonPurchasingPage.swift */,
+				33605DC626F0663B00D9EAAA /* CompPrepPurchasingPage.swift */,
 			);
-			path = "supplementary ";
+			path = "display of private lesson purchase detail";
 			sourceTree = "<group>";
 		};
-		336E160F26B8A65E000E2281 /* supplementary views  */ = {
+		33605DC826F0666F00D9EAAA /* display of options */ = {
 			isa = PBXGroup;
 			children = (
-				098F6B8A26D9AC1D003D0FA8 /* OfficialCalendar.swift */,
-				336058D526EEB44A00D9EAAA /* CheckBoxView.swift */,
-				336058DB26EEB44A00D9EAAA /* collpaseTextExample.swift */,
-				336058D926EEB44A00D9EAAA /* LoadingScreen.swift */,
-				336058DA26EEB44A00D9EAAA /* RadioGroupButton.swift */,
-				336058D626EEB44A00D9EAAA /* tableItem.swift */,
-				336058D826EEB44A00D9EAAA /* TestSelectorOverlap.swift */,
-				336058D726EEB44A00D9EAAA /* WebView.swift */,
-				098F6B8C26D9AC1F003D0FA8 /* BottomSheetView.swift */,
-				09A2B74426D6C7C00088AFE0 /* ModalDialogView.swift */,
-				336E161026B8A65E000E2281 /* DividerView.swift */,
-				098F6B8B26D9AC1E003D0FA8 /* RoundedCorners.swift */,
+				33605DC926F066E600D9EAAA /* PrivateLessonPurchasePreviews.swift */,
+				33605DCB26F0670500D9EAAA /* PurchaseTabsView.swift */,
+				33605DCD26F0673300D9EAAA /* GroupClassPurchasePreviews.swift */,
 			);
-			path = "supplementary views ";
+			path = "display of options";
 			sourceTree = "<group>";
 		};
-		336E161126B8A65E000E2281 /* data and logic */ = {
+		33605DCF26F0676E00D9EAAA /* display of groupclass purchase detail */ = {
 			isa = PBXGroup;
 			children = (
-				098F6B8D26D9AC20003D0FA8 /* AccurateSubtraction.swift */,
-				33605BB026EEB81C00D9EAAA /* KeyboardHidingExtension.swift */,
-				33605BB126EEB81C00D9EAAA /* PurchasedItemModel.swift */,
-				336E161226B8A65E000E2281 /* PurchaseData.swift */,
-				336E161326B8A65E000E2281 /* PurchaseOption.swift */,
-				336E161426B8A65E000E2281 /* GlobalVariables.swift */,
+				33605DD026F0679A00D9EAAA /* ContractPurchasingPage.swift */,
+				33605DD226F067BC00D9EAAA /* PassPurchasingPage.swift */,
 			);
-			path = "data and logic";
+			path = "display of groupclass purchase detail";
+			sourceTree = "<group>";
+		};
+		33605DD426F067DB00D9EAAA /* supplementary */ = {
+			isa = PBXGroup;
+			children = (
+				33605DF526F06AED00D9EAAA /* data and logic  */,
+				33605DDC26F068CE00D9EAAA /* suplementary views */,
+				33605DD526F0681200D9EAAA /* KeyBoardAvoider */,
+			);
+			path = supplementary;
+			sourceTree = "<group>";
+		};
+		33605DD526F0681200D9EAAA /* KeyBoardAvoider */ = {
+			isa = PBXGroup;
+			children = (
+				33605DD626F0682D00D9EAAA /* KeyboardAvoider.swift */,
+				33605DD826F0685100D9EAAA /* KeyboardAvoidancePreference.swift */,
+				33605DDA26F068A000D9EAAA /* KeyboardAvoiding.swift */,
+			);
+			path = KeyBoardAvoider;
+			sourceTree = "<group>";
+		};
+		33605DDC26F068CE00D9EAAA /* suplementary views */ = {
+			isa = PBXGroup;
+			children = (
+				33605DDD26F068F300D9EAAA /* OfficialCalendar.swift */,
+				33605DDF26F0692400D9EAAA /* CheckBoxView.swift */,
+				33605DE126F0693E00D9EAAA /* CollapseTextExample.swift */,
+				33605DE326F0697F00D9EAAA /* LoadingScreen.swift */,
+				33605DE526F069A400D9EAAA /* RadioGroupButton.swift */,
+				33605DE726F069D800D9EAAA /* tableItem.swift */,
+				33605DE926F06A0700D9EAAA /* TestSelectorOverlap.swift */,
+				33605DEB26F06A2800D9EAAA /* WebView.swift */,
+				33605DED26F06A4B00D9EAAA /* BottomSheetView.swift */,
+				33605DEF26F06A8C00D9EAAA /* ModalDialogView.swift */,
+				33605DF126F06AA400D9EAAA /* DividerView.swift */,
+				33605DF326F06AC500D9EAAA /* RoundedCorners.swift */,
+			);
+			path = "suplementary views";
+			sourceTree = "<group>";
+		};
+		33605DF526F06AED00D9EAAA /* data and logic  */ = {
+			isa = PBXGroup;
+			children = (
+				33605DF626F06B0D00D9EAAA /* AccurateSubtraction.swift */,
+				33605DF826F06B4F00D9EAAA /* KeyboardHidingExtension.swift */,
+				33605DFA26F06B8400D9EAAA /* PurchasedItemModel.swift */,
+				33605DFC26F06BB900D9EAAA /* PurchaseData.swift */,
+				33605DFE26F06BCF00D9EAAA /* PurchaseOption.swift */,
+				33605E0026F06BE600D9EAAA /* GlobalVariables.swift */,
+			);
+			path = "data and logic ";
 			sourceTree = "<group>";
 		};
 		3EA6E2F81755ABF1F2DC5FEF /* Pods */ = {
@@ -824,133 +819,133 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33605BA526EEB6D800D9EAAA /* BMICalculatorModel.swift in Sources */,
-				33605B9C26EEB6D800D9EAAA /* Blog1View.swift in Sources */,
+				33605D8826F04C2E00D9EAAA /* BMRCalculationManager.swift in Sources */,
+				33605DE826F069D800D9EAAA /* tableItem.swift in Sources */,
+				33605DBC26F062C200D9EAAA /* ShoppingCartManager.swift in Sources */,
 				0957A53A26CADF91007BB1CE /* AsyncImage.swift in Sources */,
-				336058DD26EEB44A00D9EAAA /* tableItem.swift in Sources */,
-				33605BA326EEB6D800D9EAAA /* TDEECalculationManager.swift in Sources */,
 				098F6B9F26DFDD46003D0FA8 /* GenderViewModel.swift in Sources */,
 				090E1B1C26EBBE930016CF09 /* Service3Info.swift in Sources */,
+				33605DC226F0658400D9EAAA /* PaymentPurchaseHistoryPage.swift in Sources */,
+				33605D8E26F04CBE00D9EAAA /* BMICalculatorModel.swift in Sources */,
 				0961DEDC26B9F6510077341F /* ClassResourse.swift in Sources */,
-				33605C8B26EEC8EF00D9EAAA /* PaymentPurchaseHistoryPage.swift in Sources */,
-				090E5A6326D99C7300EC6F9A /* ContractPurchaseManager.swift in Sources */,
+				33605DA826F0602B00D9EAAA /* ServiceResource.swift in Sources */,
 				09A2B74726D6F4550088AFE0 /* SignupResource.swift in Sources */,
 				098F6BA726DFDFBB003D0FA8 /* HeightViewModel.swift in Sources */,
+				33605DE426F0697F00D9EAAA /* LoadingScreen.swift in Sources */,
 				0961DED826B9C8E90077341F /* LocationResource.swift in Sources */,
 				092D99FA26AF741B006DC5FE /* VideoMain.swift in Sources */,
 				09244BD326BB5C5100D34DC0 /* MineMain3.swift in Sources */,
-				090E5A6C26D99C8200EC6F9A /* ShoppingCartManager.swift in Sources */,
+				33605DE026F0692400D9EAAA /* CheckBoxView.swift in Sources */,
+				33605DAA26F0607E00D9EAAA /* ShoppingCartResource.swift in Sources */,
+				33605DFB26F06B8400D9EAAA /* PurchasedItemModel.swift in Sources */,
+				33605D9C26F05F4C00D9EAAA /* AccessTokenResource.swift in Sources */,
+				33605DBA26F0629500D9EAAA /* ServicePurchaseViewModel.swift in Sources */,
 				090E1B0926EB9C330016CF09 /* RemoveClientFromClassViewModel.swift in Sources */,
 				09471CAB26E7B4FF00041891 /* WristBandNumViewModel.swift in Sources */,
-				090E5A8226D99D1600EC6F9A /* GetClientCreditCardResource.swift in Sources */,
+				33605DC526F065F400D9EAAA /* PrivateLessonPurchasingPage.swift in Sources */,
 				0957A54326CDD612007BB1CE /* AddClientViewModel.swift in Sources */,
 				09244BD726BC513D00D34DC0 /* TopBar.swift in Sources */,
-				33605B9A26EEB6D800D9EAAA /* Blog7View.swift in Sources */,
-				33605BBD26EEBB3500D9EAAA /* PurchaseTabsView.swift in Sources */,
-				336058DC26EEB44A00D9EAAA /* CheckBoxView.swift in Sources */,
-				336058DF26EEB44A00D9EAAA /* TestSelectorOverlap.swift in Sources */,
-				098F6B9026D9AC20003D0FA8 /* BottomSheetView.swift in Sources */,
 				09A2B75526D833BA0088AFE0 /* WaitlistEntriesOrderResource.swift in Sources */,
+				33605DD326F067BC00D9EAAA /* PassPurchasingPage.swift in Sources */,
 				092D99E626A668CA006DC5FE /* LocationMain.swift in Sources */,
-				336E161926B8A65E000E2281 /* DividerView.swift in Sources */,
+				33605DF426F06AC500D9EAAA /* RoundedCorners.swift in Sources */,
+				33605DCE26F0673300D9EAAA /* GroupClassPurchasePreviews.swift in Sources */,
 				090E1B0726EB9BD20016CF09 /* RemoveClientFromClassResource.swift in Sources */,
-				336E161B26B8A65E000E2281 /* PurchaseOption.swift in Sources */,
+				33605DEC26F06A2800D9EAAA /* WebView.swift in Sources */,
+				33605DFD26F06BB900D9EAAA /* PurchaseData.swift in Sources */,
+				33605DFF26F06BCF00D9EAAA /* PurchaseOption.swift in Sources */,
 				098F6B9B26DEF0B6003D0FA8 /* PhoneNumViewModel.swift in Sources */,
-				33605BA826EEB6D800D9EAAA /* BMRCalculatorView.swift in Sources */,
-				090E5A6D26D99C8200EC6F9A /* ResponseType.swift in Sources */,
 				092D9A0326B1CE63006DC5FE /* LocationInfo.swift in Sources */,
 				09A2B75926D844EF0088AFE0 /* RefreshingProgressViewModel.swift in Sources */,
-				33605BAE26EEB79300D9EAAA /* KeyboardAvoidancePreference.swift in Sources */,
-				33605BA426EEB6D800D9EAAA /* BMRCalculatorModel.swift in Sources */,
 				092D99E426A668CA006DC5FE /* ReformFITApp.swift in Sources */,
-				090E5A6926D99C8200EC6F9A /* NetworkRequest.swift in Sources */,
-				090E5A6126D99C7300EC6F9A /* ContractPurchaseViewModel.swift in Sources */,
+				33605D9426F05DEC00D9EAAA /* GetClientDirectDebitResource.swift in Sources */,
 				09471CB826E904B900041891 /* Trapezoid.swift in Sources */,
 				098F6B9D26DFDD34003D0FA8 /* GenderResource.swift in Sources */,
+				33605DDE26F068F300D9EAAA /* OfficialCalendar.swift in Sources */,
 				090E1B0B26EBAA2E0016CF09 /* RemoveFromWaitlistResource.swift in Sources */,
-				336E161A26B8A65E000E2281 /* PurchaseData.swift in Sources */,
+				33605DF726F06B0D00D9EAAA /* AccurateSubtraction.swift in Sources */,
+				33605DAE26F060F500D9EAAA /* ContractPurchaseManager.swift in Sources */,
 				092D9A0126B052B1006DC5FE /* MineMain.swift in Sources */,
-				33605BA026EEB6D800D9EAAA /* Blog3View.swift in Sources */,
-				090E5A7C26D99CAE00EC6F9A /* GiftCardBalanceResource.swift in Sources */,
-				336058E226EEB44A00D9EAAA /* collpaseTextExample.swift in Sources */,
-				090E5A7826D99CAE00EC6F9A /* MindbodyAPIResource.swift in Sources */,
-				098F6B8F26D9AC20003D0FA8 /* RoundedCorners.swift in Sources */,
+				33605DEA26F06A0700D9EAAA /* TestSelectorOverlap.swift in Sources */,
+				33605DD926F0685100D9EAAA /* KeyboardAvoidancePreference.swift in Sources */,
+				33605DC726F0663B00D9EAAA /* CompPrepPurchasingPage.swift in Sources */,
 				0957A54126CDD601007BB1CE /* AddClientResouce.swift in Sources */,
 				09471CA926E7B4EC00041891 /* WristBandNumResource.swift in Sources */,
-				336058DE26EEB44A00D9EAAA /* WebView.swift in Sources */,
-				33605BA126EEB6D800D9EAAA /* TDEECalculatorView.swift in Sources */,
-				090E5A5D26D99C6B00EC6F9A /* AccessTokenInitializer.swift in Sources */,
 				09A2B74D26D713FE0088AFE0 /* SigninResource.swift in Sources */,
-				090E5A8326D99D1600EC6F9A /* UpdateCreditCardResource.swift in Sources */,
+				33605D7126F0460600D9EAAA /* Blog1View.swift in Sources */,
 				090E1B1826EBBE7C0016CF09 /* Service1Info.swift in Sources */,
-				33605BA626EEB6D800D9EAAA /* BMRCalculationManager.swift in Sources */,
+				33605D7326F0462D00D9EAAA /* Blog2View.swift in Sources */,
+				33605D7F26F0492A00D9EAAA /* TDEECalculatorView.swift in Sources */,
+				33605D7526F0465300D9EAAA /* Blog3View.swift in Sources */,
+				33605DF926F06B4F00D9EAAA /* KeyboardHidingExtension.swift in Sources */,
+				33605D7726F0467400D9EAAA /* Blog4View.swift in Sources */,
+				33605DA026F05FA700D9EAAA /* ContractPurchaseResource.swift in Sources */,
+				33605D7926F0472200D9EAAA /* Blog5View.swift in Sources */,
 				092D99F726AF73F0006DC5FE /* SocialMain.swift in Sources */,
+				33605D7B26F0474600D9EAAA /* Blog7View.swift in Sources */,
 				09A2B75326D8338E0088AFE0 /* WaitlistEntriesResource.swift in Sources */,
-				33605BC326EEBB6500D9EAAA /* CompPrepPurchasingPage.swift in Sources */,
+				33605D6F26F0448400D9EAAA /* Blog6View.swift in Sources */,
 				0961DEDA26B9CEEE0077341F /* LocationViewModel.swift in Sources */,
-				33605B9F26EEB6D800D9EAAA /* Blog5View.swift in Sources */,
-				090E5A7B26D99CAE00EC6F9A /* ShoppingCartResource.swift in Sources */,
+				33605D8626F04BD200D9EAAA /* TDEECalculationManager.swift in Sources */,
 				09A2B75026D833170088AFE0 /* VisitHistoryResouce.swift in Sources */,
+				33605DB626F0625F00D9EAAA /* NetworkRequest.swift in Sources */,
 				092D99FE26AFAED8006DC5FE /* Main.swift in Sources */,
-				33605BB326EEB81C00D9EAAA /* PurchasedItemModel.swift in Sources */,
+				33605DCA26F066E600D9EAAA /* PrivateLessonPurchasePreviews.swift in Sources */,
+				33605DD126F0679A00D9EAAA /* ContractPurchasingPage.swift in Sources */,
+				33605DF026F06A8C00D9EAAA /* ModalDialogView.swift in Sources */,
 				092D99FC26AF7429006DC5FE /* ClassMain.swift in Sources */,
-				33605BBE26EEBB3500D9EAAA /* GroupClassPurchasePreview.swift in Sources */,
-				33605BAF26EEB79300D9EAAA /* KeyboardAvoiding.swift in Sources */,
+				33605D9826F05E3800D9EAAA /* GetClientCreditCardResource.swift in Sources */,
+				33605DE626F069A400D9EAAA /* RadioGroupButton.swift in Sources */,
+				33605DB226F0621300D9EAAA /* ErrorResponse.swift in Sources */,
 				098F6BA926DFDFC5003D0FA8 /* WeightResource.swift in Sources */,
+				33605DF226F06AA400D9EAAA /* DividerView.swift in Sources */,
 				0961DED626B9BFFB0077341F /* ClassInfo.swift in Sources */,
+				33605DA626F0600200D9EAAA /* MindbodyAPIResource.swift in Sources */,
 				090E5A5626D96F4400EC6F9A /* PhoneNumResource.swift in Sources */,
-				33605C9526EECC6800D9EAAA /* PurchaseHistoryResource.swift in Sources */,
-				33605B9926EEB6D800D9EAAA /* Blog6View.swift in Sources */,
+				33605DAC26F060BB00D9EAAA /* AccessTokenInitializer.swift in Sources */,
+				33605D9626F05E1300D9EAAA /* UpdateClientDIrectDebitResource.swift in Sources */,
+				33605DCC26F0670500D9EAAA /* PurchaseTabsView.swift in Sources */,
+				33605DDB26F068A000D9EAAA /* KeyboardAvoiding.swift in Sources */,
 				09244BD926BC8D7700D34DC0 /* ClassMain2.swift in Sources */,
+				33605D8C26F04C9D00D9EAAA /* BMRCalculatorModel.swift in Sources */,
 				098F6B9726DEC777003D0FA8 /* CheckView.swift in Sources */,
+				33605E0126F06BE600D9EAAA /* GlobalVariables.swift in Sources */,
 				090E1B1A26EBBE880016CF09 /* Service2Info.swift in Sources */,
-				09A2B74526D6D8750088AFE0 /* ModalDialogView.swift in Sources */,
-				090E5A7D26D99CAE00EC6F9A /* AccessTokenResource.swift in Sources */,
 				09A2B75726D83CD50088AFE0 /* ClassHistoryResource.swift in Sources */,
 				098A080326C61471004CDB24 /* PrivateTrainerInfo.swift in Sources */,
 				09A2B74926D6F4720088AFE0 /* SignupViewModel.swift in Sources */,
-				33605BBC26EEBB3500D9EAAA /* PrivateLessonPurchasePreview.swift in Sources */,
 				098A07F726C4AEA5004CDB24 /* ClassMainTab1.swift in Sources */,
-				098F6B8E26D9AC20003D0FA8 /* OfficialCalendar.swift in Sources */,
 				09244BD526BB5C6A00D34DC0 /* ProfilePage.swift in Sources */,
 				090E5A5326D95F1400EC6F9A /* RefreshingHistoryViewModel.swift in Sources */,
-				33605BB226EEB81C00D9EAAA /* KeyboardHidingExtension.swift in Sources */,
 				09244BCC26BB317D00D34DC0 /* ClassViewModel.swift in Sources */,
-				33605BA726EEB6D800D9EAAA /* BMICalculationManager.swift in Sources */,
-				090E5A6A26D99C8200EC6F9A /* MindbodyAPIRequest.swift in Sources */,
+				33605DB826F0627700D9EAAA /* ResponseType.swift in Sources */,
 				098F6BAF26DFDFEA003D0FA8 /* PostalCodeViewModel.swift in Sources */,
 				09A2B74B26D713E10088AFE0 /* SigninViewModel.swift in Sources */,
 				090E1B1E26EBBE9E0016CF09 /* Service4Info.swift in Sources */,
+				33605DE226F0693E00D9EAAA /* CollapseTextExample.swift in Sources */,
 				098F6BA526DFDFAB003D0FA8 /* HeightResource.swift in Sources */,
 				098F6BAD26DFDFDE003D0FA8 /* PostalCodeResource.swift in Sources */,
-				090E5A8726D99D3700EC6F9A /* GetClientDirectDebitResource.swift in Sources */,
-				33605C8F26EECA0800D9EAAA /* PaymentPurchaseHistoryManager.swift in Sources */,
+				33605DBE26F0635E00D9EAAA /* PaymentPurchaseHistoryManager.swift in Sources */,
 				098F6BAB26DFDFD2003D0FA8 /* WeightViewModel.swift in Sources */,
-				336E161C26B8A65E000E2281 /* GlobalVariables.swift in Sources */,
-				098F6B9126D9AC20003D0FA8 /* AccurateSubtraction.swift in Sources */,
-				33605BC226EEBB6500D9EAAA /* PrivateLessonPurchasingPage.swift in Sources */,
+				33605DD726F0682D00D9EAAA /* KeyboardAvoider.swift in Sources */,
+				33605D7D26F0477300D9EAAA /* BlogPage.swift in Sources */,
+				33605DA426F05FE800D9EAAA /* GiftCardBalanceResource.swift in Sources */,
 				098F6B9526DE5C18003D0FA8 /* ToastMessage.swift in Sources */,
-				33605BB726EEB8AA00D9EAAA /* ContractPurchasingPage.swift in Sources */,
+				33605DB426F0622E00D9EAAA /* MindbodyAPIRequest.swift in Sources */,
 				098A07F926C4AEB4004CDB24 /* ClassMainTab2.swift in Sources */,
+				33605D9E26F05F8A00D9EAAA /* PurchaseHistoryResource.swift in Sources */,
+				33605D8126F0495000D9EAAA /* BMICalculatorView.swift in Sources */,
 				0957A53F26CDC75A007BB1CE /* GlobalVariable.swift in Sources */,
-				33605B9B26EEB6D800D9EAAA /* BlogPage.swift in Sources */,
-				090E5A6B26D99C8200EC6F9A /* ServicePurchaseViewModel.swift in Sources */,
-				090E5A7E26D99CAE00EC6F9A /* ContractResource.swift in Sources */,
-				33605BB626EEB8AA00D9EAAA /* PassPurchasingPage.swift in Sources */,
-				33605BAD26EEB79300D9EAAA /* KeyboardAvoider.swift in Sources */,
-				33605BA226EEB6D800D9EAAA /* BMICalculatorView.swift in Sources */,
-				336058E126EEB44A00D9EAAA /* RadioGroupButton.swift in Sources */,
-				336058E026EEB44A00D9EAAA /* LoadingScreen.swift in Sources */,
-				090E5A8826D99D3700EC6F9A /* UpdateClientDirectDebitResource.swift in Sources */,
-				090E5A7926D99CAE00EC6F9A /* ContractPurchaseResource.swift in Sources */,
-				33605B9D26EEB6D800D9EAAA /* Blog4View.swift in Sources */,
-				090E5A7A26D99CAE00EC6F9A /* ServiceResource.swift in Sources */,
-				33605B9E26EEB6D800D9EAAA /* Blog2View.swift in Sources */,
+				33605D8326F0498C00D9EAAA /* BMRCalculatorView.swift in Sources */,
+				33605DA226F05FC100D9EAAA /* ContractResource.swift in Sources */,
+				33605D8A26F04C5C00D9EAAA /* BMICalculationManager.swift in Sources */,
+				33605DEE26F06A4B00D9EAAA /* BottomSheetView.swift in Sources */,
+				33605D9A26F05E7A00D9EAAA /* UpdateCreditCardResource.swift in Sources */,
 				098F6BA126DFDF8B003D0FA8 /* BirthDateResource.swift in Sources */,
 				09244BCF26BB5C2300D34DC0 /* MineMain1.swift in Sources */,
 				098F6BA326DFDF99003D0FA8 /* BirthDateViewModel.swift in Sources */,
-				090E5A6226D99C7300EC6F9A /* ErrorResponse.swift in Sources */,
 				090E1B0D26EBAA4E0016CF09 /* RemoveFromWaitlistViewModel.swift in Sources */,
+				33605DB026F0612200D9EAAA /* ContractPurchaseViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

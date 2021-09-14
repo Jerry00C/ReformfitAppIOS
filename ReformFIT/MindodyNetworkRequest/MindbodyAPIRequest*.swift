@@ -8,7 +8,7 @@
 import Foundation
 
 
-class APIRequest<Resource: APIResource> {
+class MindbodyAPIRequest<Resource: MindbodyAPIResource> {
     let resource: Resource
     let requestBody_: Resource.RequestModelType?
     let method: String
@@ -26,7 +26,8 @@ class APIRequest<Resource: APIResource> {
     }
 }
  
-extension APIRequest: NetworkRequest {
+extension MindbodyAPIRequest: NetworkRequest {
+    
 
 
     
@@ -39,13 +40,19 @@ extension APIRequest: NetworkRequest {
     
     func encode(_ requestBody: RequestType) -> Data {
         let jsonData = try? JSONEncoder().encode(requestBody)
+        print("encoded data:\(String(decoding: jsonData!, as: UTF8.self))")
+
         return jsonData!
     }
 
     
     func decode(_ data: Data) -> ResponseType {
-        let responseModel = try?JSONDecoder().decode(ResponseType.self, from: data)
-        return responseModel!
+        var responseModel:ResponseType = ResponseType()
+            
+        responseModel.OnSuccess = try? JSONDecoder().decode(Resource.ResponseModelType.onSuccessResponse.self, from: data)
+        
+        responseModel.OnError = try?JSONDecoder().decode(Resource.ResponseModelType.onErrorResponse.self, from: data)
+        return responseModel
     }
     
     func execute(withCompletion completion: @escaping (ResponseType?) -> Void) {
@@ -53,7 +60,7 @@ extension APIRequest: NetworkRequest {
     }
 }
 
-extension APIRequest{
+extension MindbodyAPIRequest{
     func addAuthKey(authToken authorization:String)->Void{
         requestHeaders["Authorization"]=authorization
     }

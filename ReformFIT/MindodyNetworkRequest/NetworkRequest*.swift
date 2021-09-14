@@ -9,7 +9,7 @@ import Foundation
 
 
 protocol NetworkRequest: AnyObject {
-    associatedtype ResponseType
+    associatedtype ResponseType:GeneralResponseType
     associatedtype RequestType
     var requestMethod:String {get }
     var requestHeaders: [String: String] {get set}
@@ -43,8 +43,9 @@ extension NetworkRequest {
                 print("Failed")
                 return
             }
-            print("data:\(String(decoding: data, as: UTF8.self))")
+            //print("data:\(String(decoding: data, as: UTF8.self))")
             let value = self.decode(data)
+            //print(value)
             DispatchQueue.main.async { completion(value) }
         }
         task.resume()
