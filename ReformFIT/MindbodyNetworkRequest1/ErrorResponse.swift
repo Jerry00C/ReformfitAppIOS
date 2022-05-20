@@ -19,3 +19,16 @@ struct Error: Decodable{
     let Message:String
     let Code:String
 }
+
+
+struct YOUJIUErrorResponse: Decodable{
+    let error: YOUJIUError
+    enum CodingKeys: String, CodingKey{
+        case error = "Error"
+    }
+}
+
+struct YOUJIUError: Decodable{
+    let message:String
+    let status_code:String
+}

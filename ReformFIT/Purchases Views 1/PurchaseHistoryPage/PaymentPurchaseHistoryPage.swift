@@ -16,7 +16,7 @@ struct PaymentPurchaseHistoryPage: View {
     
 //    @State var initialLoading:Bool = false
     @State var initialLoading:Bool = true
-
+    @State var loggedInLoading:Bool = true
     @State var paymentMethodLoading = false
     @State var historyLoading = false
     
@@ -61,7 +61,10 @@ struct PaymentPurchaseHistoryPage: View {
                             withAnimation{
                                 print("when done initially call credit card info: \(purchaseHistoryManager.creditCardInfo!)")
 //                                initialLoading.toggle()
-                                initialLoading = false
+                                print("it is logged in: \(globalVariable.logIn)")
+                                if globalVariable.logIn{
+                                    initialLoading = false
+                                }
                             }
                         }
             },
@@ -70,7 +73,11 @@ struct PaymentPurchaseHistoryPage: View {
                         purchaseHistoryManager.asynchronousTaskCount {[self] in
                             withAnimation{
 //                                initialLoading.toggle()
-                                initialLoading = false
+                                print("it is logged in: \(globalVariable.logIn)")
+
+                                if globalVariable.logIn{
+                                    initialLoading = false
+                                }
                             }
                         }
             }
@@ -82,7 +89,11 @@ struct PaymentPurchaseHistoryPage: View {
                         [self] in
                             withAnimation{
 //                                initialLoading.toggle()
-                                initialLoading = false
+                                print("it is logged in: \(globalVariable.logIn)")
+
+                                if globalVariable.logIn{
+                                    initialLoading = false
+                                }
                             }
                         }
                     },
@@ -90,7 +101,11 @@ struct PaymentPurchaseHistoryPage: View {
 
                             withAnimation{
 //                                initialLoading.toggle()
-                                initialLoading = false
+                                print("it is logged in: \(globalVariable.logIn)")
+
+                                if globalVariable.logIn{
+                                    initialLoading = false
+                                }
                             }
                         }
                     }
@@ -103,14 +118,22 @@ struct PaymentPurchaseHistoryPage: View {
                         [self] in
                         withAnimation{
 //                            initialLoading.toggle()
-                            initialLoading = false
+                            print("it is logged in: \(globalVariable.logIn)")
+
+                            if globalVariable.logIn{
+                                initialLoading = false
+                            }
                         }
                     }
                 },
                     if_failed: {[self] in purchaseHistoryManager.asynchronousTaskCount{[self] in
                             withAnimation{
 //                                initialLoading.toggle()
-                            initialLoading = false
+                                print("it is logged in: \(globalVariable.logIn)")
+
+                                if globalVariable.logIn{
+                                    initialLoading = false
+                                }
                             }
                         }
                     }
@@ -219,9 +242,22 @@ struct PaymentPurchaseHistoryPage: View {
                 
             }
             
-            if purchaseHistoryManager.requestOrderCount != 2{
-                initialLoadingScreen
+//            if purchaseHistoryManager.requestOrderCount != 2{
+//                initialLoadingScreen
+//
+//            }
+            
 
+            
+            if globalVariable.logIn && loggedInLoading{
+                initialLoadingScreen
+                    .onAppear(){
+                        DispatchQueue.main.async {
+                            print("\(self.purchaseHistoryManager.getClientId())")
+                            fetchClientInfo()
+                        }
+                        
+                    }
             }
         }
     }
@@ -509,6 +545,85 @@ struct PaymentPurchaseHistoryPage: View {
             }
         }
         return false
+    }
+    
+    func fetchClientInfo(){
+        DispatchQueue.main.async {
+            self.purchaseHistoryManager.setClientId(new: globalVariable.clientId!)
+            self.purchaseHistoryManager.extractClientCreditCardInfo(
+                if_user_has_one: { [self] in
+                    purchaseHistoryManager.asynchronousTaskCount {[self] in
+                                withAnimation{
+                                    print("when done initially call credit card info: \(purchaseHistoryManager.creditCardInfo!)")
+    //                                initialLoading.toggle()
+//                                    refreshModel.released = false
+//                                    refreshModel.started = false
+                                    loggedInLoading = false
+                                }
+                            }
+                },
+                if_Null: {[self] in
+    //                        initialLoading.toggle()
+                            purchaseHistoryManager.asynchronousTaskCount {[self] in
+                                withAnimation{
+    //                                initialLoading.toggle()
+//                                    refreshModel.released = false
+//                                    refreshModel.started = false
+                                    loggedInLoading = false
+                                }
+                            }
+                }
+            )
+
+                    purchaseHistoryManager.extractClientDirectDebitInfo(
+                        if_user_has_one:{ [self] in
+                            purchaseHistoryManager.asynchronousTaskCount{
+                            [self] in
+                                withAnimation{
+    //                                initialLoading.toggle()
+//                                    refreshModel.released = false
+//                                    refreshModel.started = false
+                                    loggedInLoading = false
+                                }
+                            }
+                        },
+                        if_user_has_no_debit: {[self] in purchaseHistoryManager.asynchronousTaskCount{[self] in
+
+                                withAnimation{
+    //                                initialLoading.toggle()
+//                                    refreshModel.released = false
+//                                    refreshModel.started = false
+                                    loggedInLoading = false
+                                }
+                            }
+                        }
+                    )
+
+                    purchaseHistoryManager.extractClientPurchasedItems(
+                        startDate: nil,
+                        endDate: nil,
+                        if_succeeded: {[self] in purchaseHistoryManager.asynchronousTaskCount{
+                            [self] in
+                            withAnimation{
+    //                            initialLoading.toggle()
+//                                refreshModel.released = false
+//                                refreshModel.started = false
+                                loggedInLoading = false
+                            }
+                        }
+                    },
+                        if_failed: {[self] in purchaseHistoryManager.asynchronousTaskCount{[self] in
+                                withAnimation{
+    //                                initialLoading.toggle()
+//                                    refreshModel.released = false
+//                                    refreshModel.started = false
+                                    loggedInLoading = false
+                                }
+                            }
+                        }
+                    )
+        
+        }
     }
     
     func updateDate(){

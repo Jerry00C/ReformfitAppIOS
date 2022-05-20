@@ -1,32 +1,26 @@
 //
-//  MindbodyAPIRequest.swift
-//  TryOutSwiftUI
+//  YOUJIUAPIRequest.swift
+//  TryOutSwiftUI (iOS)
 //
-//  Created by Chen Chen on 2021-07-28.
+//  Created by Chen Chen on 2021-09-09.
 //
 
 import Foundation
 
 
-class MindbodyAPIRequest<Resource: MindbodyAPIResource> {
+class YOUJIUAPIRequest<Resource: YOUJIUAPIResource>{
     let resource: Resource
     let requestBody_: Resource.RequestModelType?
     let method: String
-    var requestHeaders: [String : String]? = ["Content-Type":"application/json",
-         "API-KEY":"75d68925737844f4ac6a7d990ac11414",
-         "SiteId":"-99"
-    ]
+    var requestHeaders: [String : String]? = nil
     init(resource: Resource, requestBody: Resource.RequestModelType?,method:String) {
         self.resource = resource
         self.requestBody_ = requestBody
         self.method = method
     }
-    deinit {
-        print("request:\(self) for method \(method) is deinitialized")
-    }
 }
- 
-extension MindbodyAPIRequest: NetworkRequest {
+
+extension YOUJIUAPIRequest: NetworkRequest {
     
 
 
@@ -48,6 +42,12 @@ extension MindbodyAPIRequest: NetworkRequest {
     
     func decode(_ data: Data) -> ResponseType {
         var responseModel:ResponseType = ResponseType()
+//        do{
+//        let decodedResponse = try JSONDecoder().decode(Resource.ResponseModelType.onSuccessResponse.self, from: data)
+//        } catch let jsonError as NSError{
+//            print("JSON decode failed: \(jsonError.description)")
+//        }
+        
             
         responseModel.OnSuccess = try? JSONDecoder().decode(Resource.ResponseModelType.onSuccessResponse.self, from: data)
         
@@ -56,12 +56,24 @@ extension MindbodyAPIRequest: NetworkRequest {
     }
     
     func execute(withCompletion completion: @escaping (ResponseType?) -> Void) {
+        print(resource.url)
         load(resource.url, requestBody: requestBody_, withCompletion: completion)
     }
 }
 
-extension MindbodyAPIRequest{
-    func addAuthKey(authToken authorization:String)->Void{
-        requestHeaders!["Authorization"]=authorization
+
+extension YOUJIUAPIRequest{
+    func setHeaders(header:[String:String]){
+        requestHeaders = header
+    }
+    
+    func addHeader(key:String, value:String){
+        if requestHeaders != nil{
+            requestHeaders![key] = value
+        }
+        else {
+            requestHeaders = [:]
+            requestHeaders![key] = value
+        }
     }
 }

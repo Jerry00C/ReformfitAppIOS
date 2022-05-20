@@ -57,7 +57,7 @@ struct Main: View {
                          SocialMain()
                              
                      case .fourth:
-                         VideoMain()
+                         VideoPageOverview()
                          
                  }
                  

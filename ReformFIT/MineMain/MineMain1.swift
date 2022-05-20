@@ -257,6 +257,15 @@ struct ExtentedFuncView: View{
                     
                 }
                 NavigationLink(
+                    destination: YOUJIUReportPage(),
+                    isActive: self.$YOUJIUDataPage,
+                    label: {
+                        
+
+                        EmptyView()
+                            
+                    })
+                NavigationLink(
                     destination: PurchaseTabsView(),
                     isActive: self.$purchasePage,
                     label: {

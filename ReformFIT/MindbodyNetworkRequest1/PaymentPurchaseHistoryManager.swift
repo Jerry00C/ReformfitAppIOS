@@ -27,6 +27,13 @@ class PaymentPurchaseHistoryManager: ObservableObject{
         self.clientPurchasedItems = []
         
     }
+    func setClientId(new Id:String){
+        self.clientId = Id
+    }
+    
+    func getClientId()->String{
+        self.clientId
+    }
     
     //MARK: for extracting client purchased items
     func extractClientPurchasedItems(startDate:String?,endDate:String?,if_succeeded onCompletion:@escaping()->Void,if_failed onError:@escaping()->Void){
@@ -97,6 +104,7 @@ class PaymentPurchaseHistoryManager: ObservableObject{
                 print(realResponse.AccessToken)
                 
                 let accessToken = realResponse.AccessToken
+                print("\(self?.clientId)")
                 
                 let clientCreditCardResource = GetClientCreditCardResource(clientId: self?.clientId ?? "")
                 

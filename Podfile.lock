@@ -475,6 +475,7 @@ PODS:
   - gRPC-Core/Interface (1.28.2)
   - GTMSessionFetcher/Core (1.7.0)
   - leveldb-library (1.22.1)
+  - LiveChat (2.0.21)
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
     - nanopb/encode (= 2.30908.0)
@@ -488,6 +489,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - Firebase/Firestore
+  - LiveChat (~> 2.0.20)
 
 SPEC REPOS:
   trunk:
@@ -508,6 +510,7 @@ SPEC REPOS:
     - gRPC-Core
     - GTMSessionFetcher
     - leveldb-library
+    - LiveChat
     - nanopb
     - PromisesObjC
 
@@ -529,9 +532,10 @@ SPEC CHECKSUMS:
   gRPC-Core: 4afa11bfbedf7cdecd04de535a9e046893404ed5
   GTMSessionFetcher: 43748f93435c2aa068b1cbe39655aaf600652e91
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
+  LiveChat: 1118efd51bf2df9d94401f30c8e344a76e79e86e
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
 
-PODFILE CHECKSUM: b65b767f8a724085d2f9fa398a697575f94d51d2
+PODFILE CHECKSUM: eb77641250ae144fbed76c94af128081b1d1cb19
 
 COCOAPODS: 1.11.0

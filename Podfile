@@ -6,6 +6,9 @@ target 'ReformFIT' do
   use_frameworks!
 
 
+pod 'LiveChat', '~> 2.0.20'
+
+
 # Add the Firebase pod for Google Analytics
 pod 'Firebase/Analytics'
 
@@ -18,6 +21,7 @@ pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
 pod 'Firebase/Core'
 pod 'Firebase/Database'
+
 
 
 end

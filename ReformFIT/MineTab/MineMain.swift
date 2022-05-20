@@ -38,6 +38,8 @@ struct MineMain: View {
     @State var phoneNum: String = ""
     @State var postalCode: String = ""
     
+    var purchaseHistoryPage = PaymentPurchaseHistoryPage(clientId: "0")
+    
     var agreementText = "OUR CONDITION We highly recommend you to consult a qualified physician before engaging in training.You warrant and represent that you are not subject to any illness or condition, which may make the participation of fitness activity dangerous or harmful to you. you agree to disclose to our trainer of any conditions or changes in your health while participating in your training that may affect your ability to exercise safely and with minimal risk or injury. You acknowledge that our trainer cannot provide medical advice. You agree that if you feel dizziness, nauseous, or experience pain or discomfort at any time during training, you will immediately stop  and infom our trainer. DEFAULT if you breach any payment on time, you will be in default and your right to receive classes will be suspended immediately. ReformFIT reserves the right to immediately cancel your"
     
     
@@ -142,7 +144,7 @@ struct MineMain: View {
                                 MineMain1(wristBandBrand: $wristBandBrand, wristBandNum: $wristBandNum)
                                      .frame(width: g.frame(in: .global).width)
                                  
-                                 Text("MineMainTab2")
+                                 purchaseHistoryPage
                                      .frame(width: g.frame(in: .global).width)
                                  
                                     

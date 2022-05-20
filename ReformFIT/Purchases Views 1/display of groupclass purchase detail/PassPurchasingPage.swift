@@ -1073,8 +1073,12 @@ struct PurchaseAgreementDisplay: View {
 }
 
 struct CardBackground: View{
+    let cornerRadius:CGFloat
+    init(cornerRadius:CGFloat = 25.0) {
+        self.cornerRadius = cornerRadius
+    }
     var body: some View{
-        RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/).foregroundColor(Color("card_background"))
+        RoundedRectangle(cornerRadius: cornerRadius).foregroundColor(Color("card_background"))
     }
 }
 

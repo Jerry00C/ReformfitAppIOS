@@ -19,7 +19,8 @@ struct ReformFITApp: App {
     var body: some Scene {
         
         WindowGroup(Text("www")){
-            Main()
+            LiveChatView()
+//            Main()
         }
         
     }

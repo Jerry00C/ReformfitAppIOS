@@ -12,7 +12,7 @@ protocol NetworkRequest: AnyObject {
     associatedtype ResponseType:GeneralResponseType
     associatedtype RequestType
     var requestMethod:String {get }
-    var requestHeaders: [String: String] {get set}
+    var requestHeaders: [String: String]? {get set}
     func encode(_ requestBody: RequestType) -> Data
     func decode(_ data: Data) -> ResponseType
     func execute(withCompletion completion: @escaping (ResponseType?) -> Void)
